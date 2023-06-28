@@ -15,7 +15,11 @@ description: "This endpoint retrievers answers from your bot"
 </ParamField>
 
 <ParamField body="question" type="string">
-  This is the us
+  User question for which the answer needs to be fetched
+</ParamField>
+
+<ParamField body="message_history" type="string">
+A list of messages comprising the conversation so far.
 </ParamField>
 
 <ParamField body="stream" type="boolean">
