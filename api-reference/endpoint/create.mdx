@@ -64,6 +64,54 @@ curl --location --request POST 'https://api.mintlify.com/api/user' \
     "current_token": ""
 }'
 ```
+```python Example Request- Python
+import requests
+endpoint = "https://api.usefini.com/api/v1/answer"
+
+question = "How do I upgrade to premium?"
+instruction = "Answer as if you are replying to an email."
+message_history = [{"content": instruction, "role": "system"}] # This is optional
+data = {"question": question, "message_history": message_history}
+
+token = "your_api_key_here"  # Best stored in secrets management
+headers = {"Authorization": "Bearer " + token}
+
+# Make sure your 'content-type' header is set to 'application/json'
+answer = requests.post(endpoint, json=data, headers=headers)
+print(answer.json());
+```
+
+```javascript Example Request- Node.js
+const axios = require('axios');  // Make sure to install axios: npm install axios
+
+const endpoint = 'https://api.usefini.com/api/v1/answer';
+
+const question = 'How do I upgrade to premium?';
+const instruction = 'Answer as if you are replying to an email.';
+
+// The instruction part (role: 'system') in message_history is optional.
+// If you skip it (set to []) the instruction from the Fini settings page will be picked up instead.
+const message_history = [{ content: instruction, role: 'system' }];
+
+const data = { question: question, message_history: message_history }; // optional boolean parameter: stream: true
+
+const token = 'your_api_key_here'; // Best stored in secrets management
+
+const headers = {
+    Authorization: 'Bearer ' + token,
+    'Content-Type': 'application/json'
+};
+
+axios.post(endpoint, data, { headers: headers })
+    .then((response) => {
+        // This response will contain an updated message_history and an answer.
+        // Re-use this message_history in a new request to enable chat mode
+        console.log(response.data);
+    })
+    .catch((error) => {
+        console.error(error);
+    });
+```
 
 </RequestExample>
 
@@ -87,7 +135,7 @@ curl --location --request POST 'https://api.mintlify.com/api/user' \
 
 <CodeGroup>
 
-```python
+```python Example Request- Python
 import requests
 endpoint = "https://api.usefini.com/api/v1/answer"
 
@@ -104,7 +152,7 @@ answer = requests.post(endpoint, json=data, headers=headers)
 print(answer.json());
 ```
 
-```node.js hello_world.py
+```javascript Example Request- Node.js
 const axios = require('axios');  // Make sure to install axios: npm install axios
 
 const endpoint = 'https://api.usefini.com/api/v1/answer';
