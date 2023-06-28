@@ -1,22 +1,38 @@
 ---
 title: "Authentication"
-description: "Example overview page before API endpoints"
+description: "Read this overview before using API endpoints"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et eros iaculis tortor dapibus cursus. Curabitur quis sapien nec tortor dictum gravida.
+Use Fini's UI to generate the unique API key for your bot
+
+<Note>Every bot has a unique key. If you are deploying multiple bots, create separate keys for each bot</Note>
+
 
 ```bash
-'Authorization': 'Token <team_token>'
+'Authorization': 'Bearer <your_api_key_here>'
 ```
 
-## API Tokens
+## API Authentication
 
-Nullam convallis mauris at nunc consectetur, ac imperdiet leo rutrum. Maecenas cursus purus a pellentesque blandit. Pellentesque vitae lacinia libero, non mollis metus.
+Fini verifies your identity using your secret keys. You can use your api-key to authenciate. For example:
 
-Nam id ullamcorper urna, at rutrum enim. [Maecenas vulputate](/introduction) vehicula libero, vitae sodales augue pretium nec. Quisque a magna tempor, semper risus vel, fermentum nunc. Pellentesque fermentum interdum ex, eu convallis massa blandit sed. Aliquam bibendum ipsum vel laoreet auctor.
+| Key | Value                           |
+| -------- | ------------------------------------- |
+| Authorization     | Bearer <your_api_key_here>                     |
 
-### Permissions
 
-Etiam lobortis ut odio ut fermentum. Nunc odio velit, sollicitudin at consectetur id, tristique eget turpis. Aliquam at risus vitae dolor sodales venenatis. In hac habitasse platea dictumst.
+### Step 1:Create a Bot
 
-Aenean consequat diam eget mollis fermentum. [Quisque eu malesuada](/introduction) felis, non dignissim libero.
+Go to the setup tab, and use the “Create New Bot” button to create a new bot
+
+<Frame caption="Create the Bot you want to deploy">
+  <img src="/api-reference/create_bot.png" />
+</Frame>
+
+### Step 2:Create a Bot
+
+Go to the deploy tab, and click on Get API keys
+
+<Frame caption="Get API keys to deploy your bot">
+  <img src="/api-reference/get-api-key.png" />
+</Frame>
