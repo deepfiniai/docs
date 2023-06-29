@@ -7,19 +7,19 @@
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#12A7D3",
+    "primary": "#1b83fc",
     "light": "#81D7F7",
     "dark": "#004E7A"
   },
   "topbarLinks": [
     {
       "name": "Documentation",
-      "url": "https://mintlify.com/docs"
+      "url": "https://docs.usefini.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Access Fini AI",
+    "url": "https://app.usefini.com"
   },
   "tabs": [
     {
@@ -51,9 +51,9 @@
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/finichatAI",
+    "github": "https://usefini.com",
+    "linkedin": "https://www.linkedin.com/company/usefini"
   },
   "backgroundImage": "/background.png"
 }
