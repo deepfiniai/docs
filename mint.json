@@ -34,7 +34,7 @@
     },
     {
       "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/roadmap"]
+      "pages": ["essentials/roadmap"]
     },
     {
       "group": "API Documentation",
