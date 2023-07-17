@@ -45,7 +45,7 @@
       "pages": [
         "api-reference/endpoint/get",
         "api-reference/endpoint/answer",
-        "api-reference/endpoint/retrieve",
+        "api-reference/endpoint/feedback",
         "api-reference/endpoint/delete"
       ]
     }
