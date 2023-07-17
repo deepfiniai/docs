@@ -12,15 +12,15 @@ description: "This endpoint retrievers answers from your bot"
 
 ### Body
 
-<ParamField body="instruction" type="string" required="true">
+<ParamField body="instruction" type="string" required>
  Prompt to generate completions. If you skip it (set to []) the instruction from the Fini's UI setup page will be picked up instead.
 </ParamField>
 
-<ParamField body="question" type="string" required="true">
+<ParamField body="question" type="string" required>
   User question for which the answer needs to be fetched
 </ParamField>
 
-<ParamField body="message_history" type="string" required="true">
+<ParamField body="message_history" type="string" required>
 A list of messages comprising the conversation so far.
 </ParamField>
 
