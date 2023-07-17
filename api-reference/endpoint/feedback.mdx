@@ -6,17 +6,17 @@ description: "This endpoint allows you to store feedback from answers in the /an
 
 ### Headers
 
-<ParamField body="token" type="string" required="true">
+<ParamField header="token" type="string" required>
   This is the unique api-key for your bot 
 </ParamField>
 
 ### Body
 
-<ParamField body="answer_uuid" type="string" required="true">
+<ParamField body="answer_uuid" type="string" required>
  This is the anwer_uuid retrieved from /answer response object
 </ParamField>
 
-<ParamField body="feedback_type" type="string" required="true">
+<ParamField body="feedback_type" type="string" required>
   This is the feedback type from users. It can be set to [“thumbs_up”, “thumbs_down”]
 </ParamField>
 
