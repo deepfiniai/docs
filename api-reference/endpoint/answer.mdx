@@ -4,11 +4,13 @@ api: "POST https://api.usefini.com/api/v1/answer"
 description: "This endpoint retrievers answers from your bot"
 ---
 
-### Body
+### Headers
 
 <ParamField body="token" type="string" required="true">
   This is the unique api-key for your bot 
 </ParamField>
+
+### Body
 
 <ParamField body="instruction" type="string" required="true">
  Prompt to generate completions. If you skip it (set to []) the instruction from the Fini's UI setup page will be picked up instead.
