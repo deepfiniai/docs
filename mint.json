@@ -30,11 +30,11 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "security", "roadmap"]
+      "pages": ["introduction", "security", "roadmap","top-features"]
     },
     {
       "group": "Platform Tips",
-      "pages": ["platform/create","platform/ask","platform/invite"]
+      "pages": ["platform/ai-knowledgebase-tips","platform/create","platform/ask","platform/invite"]
     },
     {
       "group": "Integrations",
