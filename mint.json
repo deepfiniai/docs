@@ -30,11 +30,11 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "security", "platform"]
+      "pages": ["introduction", "security", "roadmap"]
     },
     {
-      "group": "Essentials",
-      "pages": ["essentials/roadmap"]
+      "group": "Platform Tips",
+      "pages": ["platform/create","platform/ask","platform/invite","platform/api-keys"]
     },
     {
       "group": "API Documentation",
