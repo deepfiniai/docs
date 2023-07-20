@@ -1,0 +1,21 @@
+---
+title: 'Fini AI Roadmap'
+description: ''
+icon: 'bullseye-arrow'
+---
+
+<Tip>We love building with our users. Here is a quick view of what's coming in the next 2 weeks. If you have any feedback please send us an email to hello@usefini.com</Tip>
+
+## Top 3 releases
+
+<Card title="Deployment" icon="wand-magic-sparkles" iconType="duotone">
+  Integrations with Intercom, and Discord
+</Card>
+
+<Card title="Data inputs" icon="bomb" iconType="duotone">
+  Ability to add parent URL links
+</Card>
+
+<Card title="Upload data via APIs" icon="star" iconType="duotone">
+  Ability to upload data using our APIs
+</Card>
