@@ -34,7 +34,12 @@
     },
     {
       "group": "Platform Tips",
-      "pages": ["platform/create","platform/ask","platform/invite","platform/api-keys"]
+      "pages": ["platform/create","platform/ask","platform/invite"]
+    },
+    {
+      "group": "Integrations",
+      "pages": ["integrations/get-api-keys","integrations/slack","integrations/discord","integrations/zendesk","integrations/intercom",
+      "integrations/chrome-extension"]
     },
     {
       "group": "API Documentation",
