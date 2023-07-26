@@ -38,8 +38,8 @@
     },
     {
       "group": "Integrations",
-      "pages": ["integrations/get-api-keys","integrations/slack","integrations/discord","integrations/zendesk","integrations/intercom",
-      "integrations/chrome-extension"]
+      "pages": ["integrations/get-api-keys","integrations/chat-widget", "integrations/chrome-extension","integrations/slack","integrations/discord","integrations/zendesk",
+        "integrations/intercom"]
     },
     {
       "group": "API Documentation",
