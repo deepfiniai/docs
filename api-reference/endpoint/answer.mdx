@@ -25,11 +25,11 @@ A list of messages comprising the conversation so far.
 
 <Expandable title="Toggle object">
 
-<ParamField name="role" type="string">
+<ParamField name="role" type="string" required>
   The role of the messages author. One of `system`, `user`, `assistant`, or `function`.
 </ParamField>
 
-<ParamField name="content" type="string">
+<ParamField name="content" type="string" required>
  The contents of the message. `content` is required for all messages except assistant messages with function calls.
 </ParamField>
 
