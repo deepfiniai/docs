@@ -85,6 +85,28 @@ Controls how the model responds to function calls. "none" means the model does n
   The API will stop generating further tokens. The returned text will not contain the stop sequence. It can be set to [“Optional”, “stop”, “words”]
 </ParamField>
 
+<ParamField name="based_on" type="object">
+
+The contents of the "based_on" field. "based_on" is a list of all data blocks from the knowledgbase that were used to generate the answer
+
+<Expandable title="Toggle object">
+
+<ParamField name="source_id" type="string">
+ Link of the source that was used to generate the answer
+</ParamField>
+
+<ParamField name="source_type" type="string">
+  Source Type- which could be url, specific file, or a third party integration like Zendesk
+</ParamField>
+
+<ResponseField name="score" type="number">
+Matching score with the user query
+</ParamField>
+
+</Expandable>
+
+</ParamField>
+
 
 ### Response
 
