@@ -11,6 +11,11 @@
     "light": "#81D7F7",
     "dark": "#1b83fc"
   },
+  "api": {
+    "auth": {
+        "method": "bearer"
+      }
+  },
   "topbarLinks": [
     {
       "name": "Documentation",
