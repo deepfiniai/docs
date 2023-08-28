@@ -1,7 +1,7 @@
 ---
 title: "Delete links"
-api: "PUT https://api.usefini.com/api/v1/public/bots/links"
-description: "This endpoint allows you to add links to your existing bot"
+api: "POST https://api.usefini.com/api/v1/public/bots/links/delete"
+description: "This endpoint allows you to delete links from your existing bot"
 ---
 
 ### Headers
@@ -13,26 +13,13 @@ description: "This endpoint allows you to add links to your existing bot"
 ### Body
 
 <ParamField body="bot_links" type="string" required>
-List of links to be added to your bot. Example [sample_bot_link_1, sample_bot_link_2]
+List of links to be deleted from your bot. Example [sample_bot_link_1, sample_bot_link_2]
 </ParamField>
-
-<ParamField body="english" type="boolean">
-Links source language. If the links content is in english then set this as true, othwerwise false. We will autodetect the language if it set as false. 
-</ParamField>
-
-<ParamField body="baser" type="boolean">
-Set this as true if you want high quality bot creation.  
-</ParamField>
-
-<ParamField body="isParentUrl" type="boolean">
-If the URL is a parent URL then set this as true.
-</ParamField>
-
 
 ### Response
 
 <ResponseField name="message" type="string">
-  Indicates whether the request for links addition was sent successfully to the server.
+  Indicates whether the URLs were successfully updated.
 </ResponseField>
 
 
@@ -41,27 +28,24 @@ If the URL is a parent URL then set this as true.
 ```python Example Request- Python
 import requests
 
-url = 'https://api.usefini.com/api/v1/public/bots/links'
+url = 'https://api.usefini.com/api/v1/public/bots/links/delete'
 token = "your_api_key_here"
 headers = {
     'authorization': 'Bearer token',
 }
 
 data = {
-    "bot_links": [ bot_link_1, bot_link_2],
-    "english": True,
-    "baser": False,
-    "isParentUrl": False
+    "bot_links": [ bot_link_1, bot_link_2]
 }
 
-response = requests.put(url, json=data, headers=headers)
+response = requests.post(url, json=data, headers=headers)
 print(response.json())
 ```
 
 ```javascript Example Request- Node.js
 const axios = require('axios');
 
-const url = 'https://api.usefini.com/api/v1/public/bots/links';
+const url = 'https://api.usefini.com/api/v1/public/bots/links/delete';
 const token = 'your_api_key_here'; // Replace with your actual API key
 
 const headers = {
@@ -69,13 +53,10 @@ const headers = {
 };
 
 const data = {
-  "bot_links": ["bot_link_1", "bot_link_2"],
-  "english": true,
-  "baser": false,
-  "isParentUrl": false
+  "bot_links": ["bot_link_1", "bot_link_2"]
 };
 
-axios.put(url, data, { headers })
+axios.post(url, data, { headers })
   .then(response => {
     console.log(response.data);
   })
@@ -90,7 +71,7 @@ axios.put(url, data, { headers })
 
 ```json Response
 {
-    "message": "Request for links addition to bot sent successfully",
+    "message": "Bot urls updated",
 }
 ```
 
