@@ -15,7 +15,7 @@
     "auth": {
         "method": "bearer"
       }
-  }
+  },
   "topbarLinks": [
     {
       "name": "Documentation",
