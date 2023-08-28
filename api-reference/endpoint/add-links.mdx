@@ -16,15 +16,15 @@ description: "This endpoint allows you to add links to your existing bot"
 List of links to be added to your bot. Example [sample_bot_link_1, sample_bot_link_2]
 </ParamField>
 
-<ParamField body="english" type="string" required>
+<ParamField body="english" type="boolean">
 Links source language. If the links content is in english then set this as true, othwerwise false. We will autodetect the language if it set as false. 
 </ParamField>
 
-<ParamField body="baser" type="string" required>
+<ParamField body="baser" type="boolean">
 Set this as true if you want high quality bot creation.  
 </ParamField>
 
-<ParamField body="isParentUrl" type="string" required>
+<ParamField body="isParentUrl" type="boolean">
 If the URL is a parent URL then set this as true.
 </ParamField>
 
