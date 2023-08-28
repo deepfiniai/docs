@@ -1,7 +1,7 @@
 ---
-title: "Store feedback"
-api: "POST https://api.usefini.com/api/v1/feedback"
-description: "This endpoint allows you to store feedback from answers in the /answer endpoint"
+title: "Add links"
+api: "PUT https://api.usefini.com/api/v1/public/bots/links"
+description: "This endpoint allows you to add links to your existing bot"
 ---
 
 ### Headers
@@ -12,19 +12,27 @@ description: "This endpoint allows you to store feedback from answers in the /an
 
 ### Body
 
-<ParamField body="answer_uuid" type="string" required>
- This is the anwer_uuid retrieved from /answer response object
+<ParamField body="bot_links" type="string" required>
+List of links to be added to your bot. Example [sample_bot_link_1, sample_bot_link_2]
 </ParamField>
 
-<ParamField body="feedback_type" type="string" required>
-  This is the feedback type from users. It can be set to [“thumbs_up”, “thumbs_down”]
+<ParamField body="english" type="string" required>
+Links source language. If the links content is in english then set this as true, othwerwise false. We will autodetect the language if it set as false. 
+</ParamField>
+
+<ParamField body="baser" type="string" required>
+Set this as true if you want high quality bot creation.  
+</ParamField>
+
+<ParamField body="isParentUrl" type="string" required>
+If the URL is a parent URL then set this as true.
 </ParamField>
 
 
 ### Response
 
 <ResponseField name="message" type="string">
-  Indicates whether the feedback was added.
+  Indicates whether the request for links addition was sent successfully to the server.
 </ResponseField>
 
 
@@ -32,44 +40,48 @@ description: "This endpoint allows you to store feedback from answers in the /an
 
 ```python Example Request- Python
 import requests
-endpoint = "https://api.usefini.com/api/v1/feedback"
 
-answer_uuid = <uuid> # Replace this with the retrieved answer_uuid from /answer endpoint
-feedback_type = "thumbs_up" # or "thumbs_down"
-data = {“answer_uuid”: answer_uuid, “feedback_type”: feedback_type}
+url = 'https://api.usefini.com/api/v1/public/bots/links'
+token = "your_api_key_here"
+headers = {
+    'authorization': 'Bearer token',
+}
 
-token = "your_api_key_here"  # Best stored in secrets management
-headers = {"Authorization": "Bearer " + token}
+data = {
+    "bot_links": [ bot_link_1, bot_link_2],
+    "english": True,
+    "baser": False,
+    "isParentUrl": False
+}
 
-# Make sure your ‘content-type’ header is set to ‘application/json’
-response = requests.post(endpoint, json=data, headers=headers)
-print(response.json());
+response = requests.put(url, json=data, headers=headers)
+print(response.json())
 ```
 
 ```javascript Example Request- Node.js
-const axios = require('axios');  // Make sure to install axios: npm install axios
+const axios = require('axios');
 
-const endpoint = 'https://api.usefini.com/api/v1/feedback';
-
-const answer_uuid = <uuid>; // Replace this with the retrieved answer_uuid from /answer endpoint
-const feedback_type = "thumbs_up" //or "thumbs_down";
-
-const data = { answer_uuid: answer_uuid, feedback_type: feedback_type }; 
-
-const token = 'your_api_key_here'; // Best stored in secrets management
+const url = 'https://api.usefini.com/api/v1/public/bots/links';
+const token = 'your_api_key_here'; // Replace with your actual API key
 
 const headers = {
-    Authorization: 'Bearer ' + token,
-    'Content-Type': 'application/json'
+  'authorization': `Bearer ${token}`
 };
 
-axios.post(endpoint, data, { headers: headers })
-    .then((response) => {
-        console.log(response.data);
-    })
-    .catch((error) => {
-        console.error(error);
-    });
+const data = {
+  "bot_links": ["bot_link_1", "bot_link_2"],
+  "english": true,
+  "baser": false,
+  "isParentUrl": false
+};
+
+axios.put(url, data, { headers })
+  .then(response => {
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
 ```
 
 </RequestExample>
@@ -78,7 +90,7 @@ axios.post(endpoint, data, { headers: headers })
 
 ```json Response
 {
-    "message": 'Added feedback',
+    "message": "Request for links addition to bot sent successfully",
 }
 ```
 
