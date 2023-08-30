@@ -43,7 +43,7 @@
     },
     {
       "group": "Integrations",
-      "pages": ["integrations/get-api-keys","integrations/chat-widget","integrations/standalone-chat","integrations/chrome-extension","integrations/slack","integrations/discord","integrations/zendesk","integrations/intercom"]
+      "pages": ["integrations/get-api-keys","integrations/standalone-chat","integrations/chat-widget","integrations/chrome-extension","integrations/slack","integrations/discord","integrations/zendesk","integrations/intercom"]
     },
     {
       "group": "API Documentation",
@@ -55,8 +55,8 @@
         "api-reference/endpoint/answer",
         "api-reference/endpoint/feedback",
         "api-reference/endpoint/add-links",
-        "api-reference/endpoint/delete-links",
-        "api-reference/endpoint/refresh-links"
+        "api-reference/endpoint/refresh-links",
+        "api-reference/endpoint/delete-links"
       ]
     }
   ],
