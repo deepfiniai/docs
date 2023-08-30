@@ -55,8 +55,8 @@
         "api-reference/endpoint/answer",
         "api-reference/endpoint/feedback",
         "api-reference/endpoint/add-links",
-        "api-reference/endpoint/refresh-links",
-        "api-reference/endpoint/delete-links"
+        "api-reference/endpoint/delete-links",
+        "api-reference/endpoint/refresh-links"
       ]
     }
   ],
