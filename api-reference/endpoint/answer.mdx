@@ -7,8 +7,8 @@ description: "This endpoint retrievers answers from your bot"
 
 ### Body
 
-<ParamField body="instruction" type="string" required>
- Prompt to generate completions. If you skip it (set to []) the instruction from the Fini's UI setup page will be picked up instead.
+<ParamField body="instruction" type="string">
+ Prompt to generate completions. If you remove this parameter from your request, the instruction from the Fini's UI setup page will be picked up instead. We recommend always filling this for faster responses (skips DB lookup of instruction)
 </ParamField>
 
 <ParamField body="question" type="string" required>
