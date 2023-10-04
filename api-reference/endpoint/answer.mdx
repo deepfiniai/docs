@@ -80,6 +80,10 @@ Controls how the model responds to function calls. "none" means the model does n
   The API will stop generating further tokens. The returned text will not contain the stop sequence. It can be set to [“Optional”, “stop”, “words”]
 </ParamField>
 
+<ParamField body="categories" type="array">
+  List of categories that you want to use to categorize the Q&A pair. 
+</ParamField>
+
 ### Response
 
 <ResponseField name="success" type="number">
