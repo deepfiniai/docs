@@ -128,7 +128,7 @@ endpoint = "https://api.usefini.com/api/v1/answer"
 question = "How do I upgrade to premium?"
 instruction = "Answer as if you are replying to an email."
 message_history = [{"content": instruction, "role": "system"}] # This is optional
-data = {"question": question, "message_history": message_history} // optional parameters: stream, temperature, stop
+data = {"question": question, "message_history": message_history} // optional parameters: stream, temperature, stop, categories
 
 token = "your_api_key_here"  # Best stored in secrets management
 headers = {"Authorization": "Bearer " + token}
@@ -150,7 +150,7 @@ const instruction = 'Answer as if you are replying to an email.';
 // If you skip it (set to []) the instruction from Fini's UI setup page will be picked up instead.
 const message_history = [{ content: instruction, role: 'system' }];
 
-const data = { question: question, message_history: message_history }; // optional parameters: stream, temperature, stop
+const data = { question: question, message_history: message_history }; // optional parameters: stream, temperature, stop, categories
 
 const token = 'your_api_key_here'; // Best stored in secrets management
 
@@ -186,6 +186,9 @@ axios.post(endpoint, data, { headers: headers })
             "source_type": "url",
         }
     ],
+   "categories": [
+           "Fini intro"
+       ],
     "messages": [
         {
             "content": "Answer in friendly tone",
