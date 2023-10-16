@@ -41,8 +41,7 @@ headers = {
 data = {
     "bot_links": [ bot_link_1, bot_link_2],
     "english": True,
-    "baser": False,
-    "isParentUrl": False
+    "baser": False
 }
 
 response = requests.put(url, json=data, headers=headers)
@@ -62,8 +61,7 @@ const headers = {
 const data = {
   "bot_links": ["bot_link_1", "bot_link_2"],
   "english": true,
-  "baser": false,
-  "isParentUrl": false
+  "baser": false
 };
 
 axios.put(url, data, { headers })
