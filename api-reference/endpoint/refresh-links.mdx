@@ -1,12 +1,12 @@
 ---
 title: "Refresh links"
-api: "POST https://api.usefini.com/api/v1/public/bots/refresh"
+api: "POST https://api.usefini.com/api/v1/bots/links/refresh/public"
 description: "This endpoint allows you to refresh links in your existing bot"
 ---
 
 ### Body
 
-<ParamField body="bot_links" type="string" required>
+<ParamField body="botLinks" type="string" required>
 List of links to be refreshed. Example [sample_bot_link_1, sample_bot_link_2]
 </ParamField>
 
@@ -22,14 +22,14 @@ List of links to be refreshed. Example [sample_bot_link_1, sample_bot_link_2]
 ```python Example Request- Python
 import requests
 
-url = 'https://api.usefini.com/api/v1/public/bots/links/refresh'
+url = 'https://api.usefini.com/api/v1/bots/links/refresh/public'
 token = "your_api_key_here"
 headers = {
     'authorization': 'Bearer token',
 }
 
 data = {
-    "bot_links": [ bot_link_1, bot_link_2]
+    "botLinks": [ bot_link_1, bot_link_2]
 }
 
 response = requests.post(url, json=data, headers=headers)
@@ -39,7 +39,7 @@ print(response.json())
 ```javascript Example Request- Node.js
 const axios = require('axios');
 
-const url = 'https://api.usefini.com/api/v1/public/bots/links/refresh';
+const url = 'https://api.usefini.com/api/v1/bots/links/refresh/public';
 const token = 'your_api_key_here'; // Replace with your actual API key
 
 const headers = {
@@ -47,7 +47,7 @@ const headers = {
 };
 
 const data = {
-  "bot_links": ["bot_link_1", "bot_link_2"]
+  "botLinks": ["bot_link_1", "bot_link_2"]
 };
 
 axios.post(url, data, { headers })
