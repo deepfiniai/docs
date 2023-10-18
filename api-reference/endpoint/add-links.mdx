@@ -1,12 +1,12 @@
 ---
 title: "Add links"
-api: "PUT https://api.usefini.com/api/v1/public/bots/links"
+api: "PUT https://api.usefini.com/api/v1/bots/links/public"
 description: "This endpoint allows you to add links to your existing bot"
 ---
 
 ### Body
 
-<ParamField body="bot_links" type="string" required>
+<ParamField body="botLinks" type="string" required>
 List of links to be added to your bot. Example [sample_bot_link_1, sample_bot_link_2]
 </ParamField>
 
@@ -32,14 +32,14 @@ Set this as true if you want high quality bot creation.
 ```python Example Request- Python
 import requests
 
-url = 'https://api.usefini.com/api/v1/public/bots/links'
+url = 'https://api.usefini.com/api/v1/bots/links/public'
 token = "your_api_key_here"
 headers = {
     'authorization': 'Bearer token',
 }
 
 data = {
-    "bot_links": [ bot_link_1, bot_link_2],
+    "botLinks": [ bot_link_1, bot_link_2],
     "english": True,
     "baser": False
 }
@@ -51,7 +51,7 @@ print(response.json())
 ```javascript Example Request- Node.js
 const axios = require('axios');
 
-const url = 'https://api.usefini.com/api/v1/public/bots/links';
+const url = 'https://api.usefini.com/api/v1/bots/links/public';
 const token = 'your_api_key_here'; // Replace with your actual API key
 
 const headers = {
@@ -59,7 +59,7 @@ const headers = {
 };
 
 const data = {
-  "bot_links": ["bot_link_1", "bot_link_2"],
+  "botLinks": ["bot_link_1", "bot_link_2"],
   "english": true,
   "baser": false
 };
