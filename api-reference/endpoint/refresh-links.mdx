@@ -6,8 +6,8 @@ description: "This endpoint allows you to refresh links in your existing bot"
 
 ### Body
 
-<ParamField body="botLinks" type="string" required>
-List of links to be refreshed. Example [sample_bot_link_1, sample_bot_link_2]
+<ParamField body="links" type="string" required>
+List of links to be refreshed. Example [sample_link_1, sample_link_2]
 </ParamField>
 
 ### Response
@@ -29,7 +29,7 @@ headers = {
 }
 
 data = {
-    "botLinks": [ bot_link_1, bot_link_2]
+    "links": [ link_1, link_2]
 }
 
 response = requests.post(url, json=data, headers=headers)
@@ -47,7 +47,7 @@ const headers = {
 };
 
 const data = {
-  "botLinks": ["bot_link_1", "bot_link_2"]
+  "links": ["link_1", "link_2"]
 };
 
 axios.post(url, data, { headers })
