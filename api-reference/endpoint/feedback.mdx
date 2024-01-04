@@ -1,16 +1,16 @@
 ---
 title: "Store feedback"
-api: "POST https://api.usefini.com/api/v1/feedback"
+api: "POST https://api-prod.usefini.com/v2/bot-requests/feedback"
 description: "This endpoint allows you to store feedback from answers in the /answer endpoint"
 ---
 
 ### Body
 
-<ParamField body="answer_uuid" type="string" required>
+<ParamField body="answerId" type="string" required>
  This is the anwer_uuid retrieved from /answer response object
 </ParamField>
 
-<ParamField body="feedback_type" type="string" required>
+<ParamField body="feedbackType" type="string" required>
   This is the feedback type from users. It can be set to [“thumbs_up”, “thumbs_down”]
 </ParamField>
 
@@ -26,11 +26,11 @@ description: "This endpoint allows you to store feedback from answers in the /an
 
 ```python Example Request- Python
 import requests
-endpoint = "https://api.usefini.com/api/v1/feedback"
+endpoint = "https://api-prod.usefini.com/v2/bot-requests/feedback"
 
-answer_uuid = <uuid> # Replace this with the retrieved answer_uuid from /answer endpoint
-feedback_type = "thumbs_up" # or "thumbs_down"
-data = {“answer_uuid”: answer_uuid, “feedback_type”: feedback_type}
+answerId = <uuid> # Replace this with the retrieved answer_uuid from /answer endpoint
+feedbackType = "thumbs_up" # or "thumbs_down"
+data = {“answerId”: answerId, “feedbackType”: feedbackType}
 
 token = "your_api_key_here"  # Best stored in secrets management
 headers = {"Authorization": "Bearer " + token}
@@ -43,12 +43,12 @@ print(response.json());
 ```javascript Example Request- Node.js
 const axios = require('axios');  // Make sure to install axios: npm install axios
 
-const endpoint = 'https://api.usefini.com/api/v1/feedback';
+const endpoint = 'https://api-prod.usefini.com/v2/bot-requests/feedback';
 
-const answer_uuid = <uuid>; // Replace this with the retrieved answer_uuid from /answer endpoint
-const feedback_type = "thumbs_up" //or "thumbs_down";
+const answerId = <uuid>; // Replace this with the retrieved answer_uuid from /answer endpoint
+const feedbackType = "thumbs_up" //or "thumbs_down";
 
-const data = { answer_uuid: answer_uuid, feedback_type: feedback_type }; 
+const data = { answerId: answerId, feedbackType: feedbackType }; 
 
 const token = 'your_api_key_here'; // Best stored in secrets management
 
