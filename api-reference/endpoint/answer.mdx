@@ -127,8 +127,8 @@ endpoint = " https://api-prod.usefini.com/v2/bots/ask-question"
 
 question = "How do I upgrade to premium?"
 instruction = "Answer as if you are replying to an email."
-message_history = [{"content": instruction, "role": "system"}] # This is optional
-data = {"question": question, "message_history": message_history} // optional parameters: stream, temperature, stop, categories
+messageHistory = [{"content": instruction, "role": "system"}] # This is optional
+data = {"question": question, "messageHistory": messageHistory} // optional parameters: stream, temperature, stop, categories
 
 token = "your_api_key_here"  # Best stored in secrets management
 headers = {"Authorization": "Bearer " + token}
@@ -146,11 +146,11 @@ const endpoint = ' https://api-prod.usefini.com/v2/bots/ask-question';
 const question = 'How do I upgrade to premium?';
 const instruction = 'Answer as if you are replying to an email.';
 
-// The instruction part (role: 'system') in message_history is optional.
+// The instruction part (role: 'system') in messageHistory is optional.
 // If you skip it (set to []) the instruction from Fini's UI setup page will be picked up instead.
-const message_history = [{ content: instruction, role: 'system' }];
+const messageHistory = [{ content: instruction, role: 'system' }];
 
-const data = { question: question, message_history: message_history }; // optional parameters: stream, temperature, stop, categories
+const data = { question: question, messageHistory: messageHistory }; // optional parameters: stream, temperature, stop, categories
 
 const token = 'your_api_key_here'; // Best stored in secrets management
 
@@ -161,8 +161,8 @@ const headers = {
 
 axios.post(endpoint, data, { headers: headers })
     .then((response) => {
-        // This response will contain an updated message_history and an answer.
-        // Re-use this message_history in a new request to enable chat mode
+        // This response will contain an updated messageHistory and an answer.
+        // Re-use this messageHistory in a new request to enable chat mode
         console.log(response.data);
     })
     .catch((error) => {
