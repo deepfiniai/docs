@@ -1,6 +1,6 @@
 ---
 title: "Add links"
-api: "PUT https://api.usefini.com/api/v1/bots/links/public"
+api: "POST https://api-prod.usefini.com/v2/bots/links/public"
 description: "This endpoint allows you to add links to your existing bot"
 ---
 
@@ -32,7 +32,7 @@ Set this as true if you want high quality bot creation.
 ```python Example Request- Python
 import requests
 
-url = 'https://api.usefini.com/api/v1/bots/links/public'
+url = 'https://api-prod.usefini.com/v2/bots/links/public'
 token = "your_api_key_here"
 headers = {
     'authorization': 'Bearer token',
@@ -44,14 +44,14 @@ data = {
     "baser": False
 }
 
-response = requests.put(url, json=data, headers=headers)
+response = requests.post(url, json=data, headers=headers)
 print(response.json())
 ```
 
 ```javascript Example Request- Node.js
 const axios = require('axios');
 
-const url = 'https://api.usefini.com/api/v1/bots/links/public';
+const url = 'https://api-prod.usefini.com/v2/bots/links/public';
 const token = 'your_api_key_here'; // Replace with your actual API key
 
 const headers = {
@@ -64,7 +64,7 @@ const data = {
   "baser": false
 };
 
-axios.put(url, data, { headers })
+axios.post(url, data, { headers })
   .then(response => {
     console.log(response.data);
   })
