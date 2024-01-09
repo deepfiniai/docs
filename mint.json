@@ -54,6 +54,7 @@
       "pages": [
         "api-reference/endpoint/answer",
         "api-reference/endpoint/feedback",
+        "api-reference/endpoint/chat-history",
         "api-reference/endpoint/add-links",
         "api-reference/endpoint/refresh-links",
         "api-reference/endpoint/delete-links"
