@@ -1,0 +1,63 @@
+---
+title: "Get chat history"
+api: "GET https://api-prod.usefini.com/v2/bots/requests/public"
+description: "This endpoint allows you to fetch chat history"
+---
+
+### Query
+
+<ParamField query="source" type="string" default="none" required>
+  Allows you to fetch chat history for a particular source, or all sources. 
+  Valid values are "all","zendesk","slack","discord","widget","intercom","ui","api"
+</ParamField>
+
+<ParamField query="startEpoch" type="number" default="none" required>
+  Epoch timestamp in milliseconds for the start date of history
+</ParamField>
+
+<ParamField query="endEpoch" type="number" default="none" required>
+  Epoch timestamp in milliseconds for the end date of history
+</ParamField>
+
+### Response
+
+<ResponseField name="botName" type="string">
+  Name of your bot in Fini Dashboard
+</ResponseField>
+
+<ResponseField name="createdAt" type="number">
+  Epoch timestamp corresponding to the exact time when the question was asked
+</ResponseField>
+
+<ResponseField name="source" type="string">
+  Source used to ask the question
+</ResponseField>
+
+<ResponseField name="question" type="string">
+  Question asked on Fini
+</ResponseField>
+
+<ResponseField name="answer" type="string">
+  Answer received from Fini
+</ResponseField>
+
+<ResponseField name="basedOn" type="array">
+  This field gives detailed info on the knowledgebase used to formulate the answer
+</ResponseField>
+
+<ResponseField body="messageHistory" type="array">
+A list of messages comprising the conversation so far.
+
+  <Expandable title="Toggle object">
+
+    <ResponseField body="role" type="string">
+      The role of the messages author. One of `system`, `user`, `assistant`, or `function`.
+    </ParamField>
+    
+    <ResponseField body="content" type="string">
+     The contents of the message. `content` is required for all messages except assistant messages with function calls.
+    </ParamField>
+
+  </Expandable>
+
+</ResponseField>
