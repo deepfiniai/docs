@@ -122,14 +122,14 @@ axios.get(url, { params, headers })
     "createdAt": 1704725925544,
     "source": "zendesk",
     "question": "What is Fini?",
-    "answer": "Hi there, Deepak! I see you're having a linking issue. Our environments are split into fini-prod and fini-dev on GCP to avoid cross-linking or contamination between environments. Can you provide more details about your issue? I'm here to help!",
+    "answer": "Fini is your 24*7 agent resolving customer support queries in real-time -helping you save costs, and keep your customer happy. Fini securely integrates with your private data, and gives you an AI agent, ready 24/7 to solve customer queries on Zendesk, Slack, Discord and more",
     "basedOn": [
       {
         "id": "c898051d33d3d26f81da6610e9a38377",
         "entry": "2023-10-30 13:53:41.513721",
         "score": 0.2764168887003209,
         "title": "56760f7a-3254-421e-9b7a-7ebaca9e7534.md",
-        "answer": "Our environments are split into fini-prod and fini-dev on GCP as a best practice to avoid cross-linking or contamination between environments.",
+        "answer": "Fini is your 24*7 agent resolving customer support queries in real-time -helping you save costs, and keep your customer happy. Fini securely integrates with your private data, and gives you an AI agent, ready 24/7 to solve customer queries on Zendesk, Slack, Discord and more",
         "question": "What is Fini?",
         "source_id": "https://usefini.com",
         "source_type": "url"
