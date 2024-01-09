@@ -116,6 +116,33 @@ axios.get(url, { params, headers })
 
 ```json Response
 
+[
+  {
+    "botName": "Fini",
+    "createdAt": 1704725925544,
+    "source": "zendesk",
+    "question": "What is Fini?",
+    "answer": "Hi there, Deepak! I see you're having a linking issue. Our environments are split into fini-prod and fini-dev on GCP to avoid cross-linking or contamination between environments. Can you provide more details about your issue? I'm here to help!",
+    "basedOn": [
+      {
+        "id": "c898051d33d3d26f81da6610e9a38377",
+        "entry": "2023-10-30 13:53:41.513721",
+        "score": 0.2764168887003209,
+        "title": "56760f7a-3254-421e-9b7a-7ebaca9e7534.md",
+        "answer": "Our environments are split into fini-prod and fini-dev on GCP as a best practice to avoid cross-linking or contamination between environments.",
+        "question": "What is Fini?",
+        "source_id": "https://usefini.com",
+        "source_type": "url"
+      }
+    ],
+    "messageHistory": [
+      {
+        "role": "system",
+        "content": "Instruction - You are Clippy, a helpful agent and you are answering questions for customers and internal employees. Be casual, and excited to help your users. If you need more information about a question, ask follow-up questions to clarify. Let’s work this out in a step-by-step way to be sure we have the correct answer. Answer as concisely as possible. It’s very important to note that you are only allowed to give answers from the information given to you. If you can’t find the answer, say \\\"Let me have someone on the team look into this, and we will get back to you ASAP\\\". Never break character.. Answer based both on the general knowledge and the provided content"
+      }
+    ]
+  }
+]
 
 ```
 
