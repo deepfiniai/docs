@@ -15,7 +15,7 @@ description: "This endpoint retrievers answers from your bot"
   User question for which the answer needs to be fetched
 </ParamField>
 
-<ParamField body="messageHistory" type="string" required>
+<ParamField body="messageHistory" type="array" required>
 A list of messages comprising the conversation so far.
 
   <Expandable title="Toggle object">
@@ -114,7 +114,7 @@ A list of messages comprising the conversation so far.
 
 ```python Example Request- Python
 import requests
-endpoint = " https://api-prod.usefini.com/v2/bots/ask-question"
+endpoint = "https://api-prod.usefini.com/v2/bots/ask-question"
 
 question = "How do I upgrade to premium?"
 instruction = "Answer as if you are replying to an email."
@@ -132,7 +132,7 @@ print(answer.json());
 ```javascript Example Request- Node.js
 const axios = require('axios');  // Make sure to install axios: npm install axios
 
-const endpoint = ' https://api-prod.usefini.com/v2/bots/ask-question';
+const endpoint = 'https://api-prod.usefini.com/v2/bots/ask-question';
 
 const question = 'How do I upgrade to premium?';
 const instruction = 'Answer as if you are replying to an email.';
