@@ -61,3 +61,63 @@ A list of messages comprising the conversation so far.
   </Expandable>
 
 </ResponseField>
+
+
+<RequestExample>
+
+```python Example Request- Python
+import requests
+url = "https://api-prod.usefini.com/v2/bots/requests/public"
+token = "your_api_key_here"  # Best stored in secrets management
+headers = {"Authorization": "Bearer " + token}
+
+params = {
+    'source': 'all',  # Replace with desired source
+    'startEpoch': 1633046400000,  # Replace with desired start epoch timestamp in milliseconds
+    'endEpoch': 1635638400000  # Replace with desired end epoch timestamp in milliseconds
+}
+
+# Make the GET request
+response = requests.get(url, params=params, headers=headers)
+
+# Check if the request was successful and print the response
+if response.status_code == 200:
+    print(response.json())
+else:
+    print(f"Failed to fetch data: {response.status_code}")
+```
+```javascript Example Request- Node.js
+const axios = require('axios'); // Make sure to install axios: npm install axios
+
+const url = 'https://api-prod.usefini.com/v2/bots/requests/public';
+const token = 'your_api_key' // Replace with your actual API key
+const headers = {
+        'Authorization': `Bearer ${token}`
+};
+const params = {
+        source: 'all',  // Replace with desired source
+        startEpoch: 1633046400000,  // Replace with desired start epoch timestamp in milliseconds
+        endEpoch: 1635638400000  // Replace with desired end epoch timestamp in milliseconds
+};
+
+// Make the GET request
+axios.get(url, { params, headers })
+        .then(response => {
+                console.log(response.data);
+        })
+        .catch(error => {
+                console.log(error)
+                console.error(`Error: ${error.message}`);
+        });
+```
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+
+
+```
+
+</ResponseExample>
+
