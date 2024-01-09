@@ -6,7 +6,7 @@ description: "This endpoint allows you to fetch chat history"
 
 ### Query
 
-<ParamField query="source" type="string" default="none" required>
+<ParamField query="source" type="array" default="none" required>
   Allows you to fetch chat history for a particular source, or all sources. 
   Valid values are "all","zendesk","slack","discord","widget","intercom","ui","api"
 </ParamField>
@@ -72,7 +72,7 @@ token = "your_api_key_here"  # Best stored in secrets management
 headers = {"Authorization": "Bearer " + token}
 
 params = {
-    'source': 'all',  # Replace with desired source
+    'source': ['zendesk', 'api'],  # Replace with desired source
     'startEpoch': 1633046400000,  # Replace with desired start epoch timestamp in milliseconds
     'endEpoch': 1635638400000  # Replace with desired end epoch timestamp in milliseconds
 }
@@ -95,7 +95,7 @@ const headers = {
         'Authorization': `Bearer ${token}`
 };
 const params = {
-        source: 'all',  // Replace with desired source
+        source: ['zendesk', 'api'],  // Replace with desired source
         startEpoch: 1633046400000,  // Replace with desired start epoch timestamp in milliseconds
         endEpoch: 1635638400000  // Replace with desired end epoch timestamp in milliseconds
 };
