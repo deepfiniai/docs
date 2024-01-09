@@ -113,9 +113,7 @@ axios.get(url, { params, headers })
 </RequestExample>
 
 <ResponseExample>
-
 ```json Response
-
 [
   {
     "botName": "Fini",
@@ -143,8 +141,6 @@ axios.get(url, { params, headers })
     ]
   }
 ]
-
 ```
-
 </ResponseExample>
 
