@@ -1,0 +1,89 @@
+---
+title: 'Zendesk Chat'
+description: 'Learn how to deploy Fini on your Zendesk Chat'
+icon: 'house'
+---
+
+<Tip>Zendesk chat needs manual configuration from Fini team after the setup. Please contact us at hello@usefini.com</Tip>
+
+### [Deploy Zendesk Chat | Fini](https://app.usefini.com/dashboard/deploy)
+
+
+### 1. Click on Deploy
+![Step 1 screenshot](https://images.tango.us/workflows/f5348255-da41-459f-94da-ef33b65d686f/steps/d05d7aa0-5a75-4651-962f-ae9e1cf0ace3/bc44872a-e53c-433d-b6b8-23c7cad8e7ab.png?crop=focalpoint&fit=crop&fp-x=0.1202&fp-y=0.3938&fp-z=1.9329&w=1200&mark-x=27&mark-y=373&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01MDQmaD0xMDQmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+
+### 2. Click on Authorize
+![Step 1 screenshot](https://images.tango.us/workflows/565fc95a-07e7-4975-97cb-922e01bb63ab/steps/ab5dfff6-b5cc-4070-9795-ecb8ba375f59/e0eed6b0-2dd4-42c9-9ae9-991ac002c9cf.png?crop=focalpoint&fit=crop&fp-x=0.6704&fp-y=0.3443&fp-z=1.7434&w=1200&mark-x=733&mark-y=445&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xMzUmaD01OCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+### 2. Add your Subdomain
+![Step 2 screenshot](https://images.tango.us/workflows/565fc95a-07e7-4975-97cb-922e01bb63ab/steps/4cbc4e7a-3db2-465a-894f-3a6d419b8dd4/48e69d1a-8cc4-4662-9aef-34d446c947ad.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.4454&fp-z=1.8985&w=1200&&mark-x=342&mark-y=395&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01MTcmaD03MSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+### 3. Add your AccountID
+![Step 3 screenshot](https://images.tango.us/workflows/565fc95a-07e7-4975-97cb-922e01bb63ab/steps/4b4a1b81-741f-4e7e-8f87-158ea188577e/36cc2ad2-464e-40fe-880f-846a74eed6a8.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5661&fp-z=1.8985&w=1200&mark-x=342&mark-y=395&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01MTcmaD03MSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+### 4. Proceed to the next step
+![Step 4 screenshot](https://images.tango.us/workflows/565fc95a-07e7-4975-97cb-922e01bb63ab/steps/9ae89422-125d-4974-b7aa-3d20e23cf57a/729555b3-1498-4184-9aff-a91a6f40b834.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=803&mark-y=546&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01OSZoPTMxJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+
+### 5. Choose Chat configuration
+
+This screen allows you to configure your Zendesk chat responses
+![Step 5 screenshot](https://images.tango.us/workflows/565fc95a-07e7-4975-97cb-922e01bb63ab/steps/f12dc317-5d41-4e5c-96b9-fc49014fced9/22d50156-52dd-43e9-8eed-38bccedd0c6d.png?crop=focalpoint&fit=crop&fp-x=0.3929&fp-y=0.3947&fp-z=1.9340&w=1200&mark-x=348&mark-y=395&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01MDQmaD03MSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+### 6. Select the bot you want to deploy
+![Step 6 screenshot](https://images.tango.us/workflows/565fc95a-07e7-4975-97cb-922e01bb63ab/steps/3ae0efa8-932b-49da-bf5b-53f0936e6742/45e78e14-876b-4551-bac4-e50683bb6b1b.png?crop=focalpoint&fit=crop&fp-x=0.4954&fp-y=0.4905&fp-z=1.9392&w=1200&mark-x=102&mark-y=377&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01MDImaD03MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+### 7. Choose reply type
+
+We allow you to reply in 2 different ways:
+1) Direct replies i.e. direct responses to customers
+2) Internal comments i.e. creating internal comments for agents
+
+![Step 7 screenshot](https://images.tango.us/workflows/565fc95a-07e7-4975-97cb-922e01bb63ab/steps/26e33ea4-5a69-4468-ae15-f9b9f6386f50/a1fada8c-cb25-40e5-b516-509f010d84de.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=603&mark-y=395&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNTkmaD0zOCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+### 8. Click on Set a time delay when responding (e.g. 5 sec)
+![Step 8 screenshot](https://images.tango.us/workflows/565fc95a-07e7-4975-97cb-922e01bb63ab/steps/0603de02-7aa7-4a34-826b-c83396add93b/3e9e5ba6-1a1c-4011-997e-da79d0dfe422.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=338&mark-y=466&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNTkmaD0zOCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+### 9. PII masking for data anonymity
+
+If you choose to mask the PII we will not mask all PII data from our ML models/ OpenAI.
+
+Note: In this case, we will also not read or store any PII in our database as well
+
+![Step 9 screenshot](https://images.tango.us/workflows/565fc95a-07e7-4975-97cb-922e01bb63ab/steps/9f30d13b-2256-4cda-ac5c-d96b7752a8db/81e2cb45-bd48-4a52-a992-b481e8aeaaea.png?crop=focalpoint&fit=crop&fp-x=0.6106&fp-y=0.5623&fp-z=2.0111&w=1200&mark-x=340&mark-y=393&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01MjAmaD03NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+### 10. Internal Comments Configuration
+
+Through this configuration you can chose to create internal comments for certain scenarios even when you are creating direct replies for customers
+
+![Step 10 screenshot](https://images.tango.us/workflows/565fc95a-07e7-4975-97cb-922e01bb63ab/steps/8ad21c36-b651-4d32-812b-9ca37a31d28b/5b206b67-f187-4048-a83b-42491cae82a7.png?crop=focalpoint&fit=crop&fp-x=0.4786&fp-y=0.5204&fp-z=1.0966&w=1200&mark-x=341&mark-y=498&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0yMzMmaD00MCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+### 11. 9.1 No. of direct replies before switching to internal comment
+![Step 11 screenshot](https://images.tango.us/workflows/565fc95a-07e7-4975-97cb-922e01bb63ab/steps/9ed9da07-23ff-40bc-8343-45fe0c4387e8/03b88f50-3682-4acb-bda6-0e773000b286.png?crop=focalpoint&fit=crop&fp-x=0.3894&fp-y=0.6322&fp-z=1.9392&w=1200&mark-x=349&mark-y=394&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01MDImaD03MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+### 12. 9.2 Creating internal comments if agent is assigned
+![Step 12 screenshot](https://images.tango.us/workflows/565fc95a-07e7-4975-97cb-922e01bb63ab/steps/9068976f-120f-4712-8135-a0739eec5041/3a55125b-cbd0-45f5-ba79-924b896cf2d0.png?crop=focalpoint&fit=crop&fp-x=0.6106&fp-y=0.6322&fp-z=2.0111&w=1200&mark-x=340&mark-y=393&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01MjAmaD03NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+### 13. Authorize Email setup
+![Step 13 screenshot](https://images.tango.us/workflows/565fc95a-07e7-4975-97cb-922e01bb63ab/steps/c6d56f7b-c320-4554-90bf-cd9cbe892b31/6e427d5e-2dcf-45e5-9e24-2161255a0e6c.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=776&mark-y=610&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04NiZoPTMxJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+
+
+### 14. Enable Categorization
+
+After you have authorized you can chose to enable categorization for all incoming tickets. Note that the "Category" field should be Multi-select
+![Step 14 screenshot](https://images.tango.us/workflows/565fc95a-07e7-4975-97cb-922e01bb63ab/steps/f944c5c9-febd-4263-9f7c-7221c84da8cf/9a431bc4-62bf-4697-a263-683af8450565.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=324&mark-y=582&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NTkmaD01OSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+### 15. Complete Zendesk Auth
+![Step 9 screenshot](https://images.tango.us/workflows/f5348255-da41-459f-94da-ef33b65d686f/steps/6e4b3143-f8c3-4c1c-bc60-39e0eddbb4d6/cac70ded-f1a5-4e68-8e42-97be76cf352d.png?crop=focalpoint&fit=crop&fp-x=0.5005&fp-y=0.5767&fp-z=1.6081&w=1200&mark-x=289&mark-y=375&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz02MjEmaD0xMDEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+
+
+## [You can return to the app, your Zendesk setup is complete!](https://app.usefini.com/dashboard/deploy)
+
+<br/>
