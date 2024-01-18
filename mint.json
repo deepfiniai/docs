@@ -43,7 +43,7 @@
     },
     {
       "group": "Integrations",
-      "pages": ["integrations/get-api-keys","integrations/standalone-chat","integrations/chat-widget","integrations/chrome-extension","integrations/slack","integrations/discord","integrations/zendesk-email","integrations/zendesk-chat","integrations/intercom"]
+      "pages": ["integrations/get-api-keys","integrations/standalone-chat","integrations/chat-widget","integrations/chrome-extension","integrations/slack","integrations/discord","integrations/zendesk-email","integrations/intercom"]
     },
     {
       "group": "API Documentation",
