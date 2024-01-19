@@ -46,7 +46,7 @@
       "pages": ["input-integrations/notion","input-integrations/confluence","input-integrations/googledrive","input-integrations/zendesk"]
     },
     {
-      "group": "Integrations",
+      "group": "Deploy Fini",
       "pages": ["integrations/get-api-keys","integrations/standalone-chat","integrations/chat-widget","integrations/chrome-extension","integrations/slack","integrations/discord","integrations/zendeskEmail","integrations/zendeskChat","integrations/intercom"]
     },
     {
