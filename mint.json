@@ -43,7 +43,7 @@
     },
     {
       "group": "Input Integrations",
-      "pages": ["input-integrations/notion"]
+      "pages": ["input-integrations/notion","input-integrations/confluence"]
     },
     {
       "group": "Integrations",
