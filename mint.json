@@ -42,12 +42,12 @@
       "pages": ["platform/ai-knowledgebase-tips","platform/create","platform/ask","platform/invite"]
     },
     {
-      "group": "Integrations",
-      "pages": ["integrations/get-api-keys","integrations/standalone-chat","integrations/chat-widget","integrations/chrome-extension","integrations/slack","integrations/discord","integrations/zendeskEmail","integrations/zendeskChat","integrations/intercom"]
-    },
-    {
       "group": "Input Integrations",
       "pages": ["input-integrations/notion"]
+    },
+    {
+      "group": "Integrations",
+      "pages": ["integrations/get-api-keys","integrations/standalone-chat","integrations/chat-widget","integrations/chrome-extension","integrations/slack","integrations/discord","integrations/zendeskEmail","integrations/zendeskChat","integrations/intercom"]
     },
     {
       "group": "API Documentation",
