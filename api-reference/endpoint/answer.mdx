@@ -119,8 +119,8 @@ endpoint = "https://api-prod.usefini.com/v2/bots/ask-question"
 question = "How do I upgrade to premium?"
 instruction = "Answer as if you are replying to an email."
 
-// The instruction part (role: 'system') in messageHistory is optional.
-// If you skip it (set to []) the instruction from Fini's UI setup page will be picked up instead.
+# The instruction part (role: 'system') in messageHistory is optional.
+# If you skip it (set to []) the instruction from Fini's UI setup page will be picked up instead.
 messageHistory = [{"content": instruction, "role": "system"}] # This is optional
 
 data = {"question": question, "messageHistory": messageHistory} // optional parameters: stream, temperature, stop, categories
@@ -130,8 +130,8 @@ headers = {"Authorization": "Bearer " + token}
 
 # Make sure your 'content-type' header is set to 'application/json'
 answer = requests.post(endpoint, json=data, headers=headers)
-// This response will contain an updated messageHistory
-// Re-use this messageHistory in a new request to enable chat mode
+# This response will contain an updated messageHistory
+# Re-use this messageHistory in a new request to enable chat mode
 
 print(answer.json());
 ```
