@@ -1,107 +1,157 @@
-# Deploying Fini on Zendesk
+# Fini Integration with Zendesk
 
-Integrating Fini with your Zendesk is straightforward and can be done in a few simple steps. Below is a detailed guide on how to deploy and configure Fini for your Zendesk account.
+This document provides a comprehensive guide to integrate Fini with Zendesk, categorized into four main sections: Connection Details, Replies Setting, Escalation Setting, and Categorization Setting. Follow the listed steps and configurations to successfully connect and optimize your Fini chatbot within the Zendesk environment.
 
-## 1. Connect Fini to Your Zendesk
+## 1. Connection Details
 
-1. **Access Deployment**:  
-   Navigate to the **Deploy** section within the Fini dashboard.
+1. **Click on Deploy**
 
-![Step 1 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/678ecc0a-b08a-4771-b69b-75d08deecc97/953cf954-1720-4db9-bb45-0ea0bf6b57a5.png?crop=focalpoint&fit=crop&fp-x=0.2160&fp-y=0.2547&fp-z=2.3151&w=1200&mark-x=22&mark-y=496&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0zNjcmaD04MSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+![Step 1 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/f70c7de3-e270-4b48-858d-a57ed95e1cb9/aee82e88-64ae-499d-b704-902086b64bbf.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=7&mark-y=244&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNjYmaD00MCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
-2. **Select Integration**:  
-   Choose the **Zendesk integration** and click **Connect**.
-3. **Add Your Subdomain**:  
-   Enter the **subdomain** for your Zendesk account. This is a unique identifier.
-4. **Add Your Account ID**:  
-   Input your **Account ID** to establish the connection.
-5. **Proceed to Next Step**:  
-   After filling out these details, move on to the **Email Configuration** section.
+2. **Select the Zendesk Integration**: Click Connect.
 
-## 2. Configure Email Settings
+![Step 2 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/bf7c05c7-3a84-4b8d-b97d-37e0a1c76f8d/89a7eba3-6531-43c1-9bcd-32aa6310a81d.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=208&mark-y=428&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNDMmaD0yMiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
-You'll be taken to the email configuration screen, which allows you to set up Fini's responses to Zendesk email tickets. Here's how to customize the settings:
+3. **Add Your Subdomain**: Enter the unique identifier of your Zendesk account.
+    - _Where can I find my Zendesk subdomain?_: https://support.zendesk.com/hc/en-us/articles/4409381383578-Where-can-I-find-my-Zendesk-subdomain
 
-### **Select the Bot**
+![Step 3 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/d5e8b3ec-9144-4b9b-a017-0466c6d9a2ef/d5de312e-c241-4f1f-a41e-5dce04c2f27a.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=752&mark-y=136&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zOTUmaD01MSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
-Choose the specific **bot** you wish to deploy for managing Zendesk tickets.
 
-### **Reply Settings**
+4. **Add Your Account ID**:
 
-The following settings determine how Fini will interact with your customers:
+    - _Where can I find my Account ID?_: https://www.loom.com/share/61fbc0f21d684541bb64a26d56d8a6b9?sid=81e2a956-eda8-40ff-ad7b-937598c21276
 
-#### **Time Delay**  
-If you want Fini to wait before responding to messages (creating a more natural, human-like interaction), set a **time delay**. The delay is in **seconds**; for example, enter `3600` to delay by an hour.
+![Step 4 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/af48d64d-21b2-4607-8571-2ca8e43f85b3/5d054640-2bfc-42c4-83ed-92ab5c19c8e0.png?crop=focalpoint&fit=crop&fp-x=0.5753&fp-y=0.2080&fp-z=1.8855&w=1200&mark-x=603&mark-y=279&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01MjEmaD02OCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
-#### **Debounce Lag**  
-Set a **debounce lag** to introduce a delay before the bot replies. This is particularly useful if a user sends multiple messages about the same issue. During the delay, Fini assesses all incoming messages to generate a more accurate and relevant response.
+### Email Configuration
 
-#### **Reply Type**  
-Choose how Fini should respond:
-- **Direct Replies**: Fini responds directly to the customer.
-- **Internal Comments**: Fini adds internal comments visible only to agents, not the end-user.
+Once connected, you'll be automatically prompted to configure your Zendesk email ticket responses. Ensure to fill in all necessary fields as indicated.
 
-#### **Reply Type If Agent Assigned**  
-Configure how Fini behaves when a support agent is assigned to a ticket:
-- **Reply to End User**: Fini continues engaging with the customer even after agent assignment.
-- **Post Internal Comment**: Fini stops communicating directly with the customer and instead posts updates as internal comments for the support team.
-- **Go Silent**: Fini stops all activity on the ticket, allowing the agent to handle it entirely.
+![Step 5 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/995f98f2-59fd-4633-9d94-1fc72c1e48fa/6500a5c7-605f-4a0d-a103-8f22b0715e8b.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=610&mark-y=669&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz00NzImaD01NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
-### **PII Masking**  
-To protect **Personally Identifiable Information (PII)**, enable PII masking. When enabled, Fini will avoid using personal data (like the user's name) in responses, providing a generalized interaction.
+1. **Select the Bot to Deploy**
 
-**Example**:  
-With PII masking:  
-*"Hello, how can I assist you today?"*
 
-Without PII masking:  
-*"Hello, John, how can I assist you today?"*
+## 2. Replies Setting
 
-## 3. Assign Tickets to Fini
+![Step 6 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/cf739e89-9711-4a02-985f-136cb2c2bbc7/e1fbc51d-c16a-4317-b312-06e7c6494524.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200)
 
-Automate ticket management by assigning tickets to Fini. This enables further automation (e.g., auto-solving tickets) and analytics within Zendesk.
+Configure how Fini will handle replies:
 
-> **Note**: If you already have specific assignment rules in place, you may keep this option set to **No**.
+1. **Select Time Delay**
+    - To make Fini's response time feel more human-like, you can set a delay in seconds. For instance, a 1-hour delay would be set as `3600` seconds.
 
-## 4. Configure Escalation Settings
+    ![Step 7 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/6fcae6c3-5e4a-4d15-952c-ec8416014de5/a75af629-4e49-45a7-bacb-c498d80ed07c.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=604&mark-y=142&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MTgmaD02MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
-Manage Fini’s behavior for ticket escalations to human agents.
+2. **Set a Debounce Lag**
+    - This feature is useful for chat scenarios where the user sends multiple messages on the same issue. The bot will wait for a specified number of seconds before responding, allowing it to update its reply based on new information.
 
-### **Action if Escalated**  
-Define what happens if Fini encounters a question it cannot answer (e.g., sensitive topics):
-- **Continue Responding**: Fini will continue to engage even after escalation.
-- **Go Silent**: Fini stops replying after escalation.
-- **Send Acknowledgement Message**: Fini sends a customizable acknowledgment message to the customer once escalation occurs.
+    ![Step 8 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/b3bb06eb-8126-4122-9581-6275b26aea92/06167582-9361-4a23-bece-882b0a930e96.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=599&mark-y=241&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MjMmaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
-**Suggested Message**:  
-> "Thank you for the additional information. This will be included in the ticket for our specialized human agent team."
 
-### **Threshold Count for Escalation**  
-Set a **threshold** for the maximum number of replies before escalation. If Fini cannot resolve an issue within a set number of replies (e.g., 5 or 10), the ticket is escalated to a human agent.
+### Choose a Reply Type
 
-**Suggested Message When Threshold is Reached**:  
-> "Thank you for your message. Unfortunately, this is outside of my expertise, and I will need to escalate this to our specialized support team. A member of our team will reach out shortly."
+Fini supports two types of replies:
+- **Direct Replies**: Direct responses to customers.
+- **Internal Comments**: Internal notes visible only to your support agents.
 
-## 5. Authorize Fini
+![Step 9 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/88da13fd-9f75-47c9-accf-058784b12b67/54169a23-9d1e-404c-8fc5-53fbcec0593f.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=594&mark-y=307&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzMmaD02NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
-Complete the **authorization process** by clicking **Authorize**. This will establish a secure connection between Fini and your Zendesk account.
+### Reply Type if Agent Assigned
 
-## 6. Configure Ticket Categorization
+Customize Fini's behavior when a support agent takes over the ticket:
+- **Reply to End User**: Fini continues to interact with the end user.
+- **Post Internal Comment**: Fini stops interacting with the user and posts updates as internal comments.
+- **Go Silent**: Fini ceases all activity once an agent is assigned.
 
-Once authorization is complete, a new **Categorization** section will appear.
+![Step 10 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/4f37a457-3323-430b-bdd0-8f8f07574071/ed9ae070-1d88-4451-a8de-da152dceccff.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=599&mark-y=401&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzAmaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
-### **Enable Categorization**  
-Toggle the **Categorization** setting to allow Fini to automatically categorize tickets based on their content using AI.
+### PII Masking
 
-### **Categorization Settings**  
-1. **Select a Categorization Field**:  
-   Choose a multi-select field from Zendesk that contains all necessary categories. Fini will use this field to categorize tickets.
-2. **Category Add Type**:  
-   - **Append Categories**: Add new categories with each reply.
-   - **Overwrite Categories**: Maintain only one active category per reply.
-3. **Category Limit**:  
-   Define how many categories should be assigned per reply.
+To protect Personally Identifiable Information (PII), enabling this will make the bot refrain from using personal details like the user's name during interactions.
+
+![Step 11 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/98683340-39a7-4db0-9777-837e4b39cf4c/a736f252-9411-49b3-bbe3-7734ffdda014.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=601&mark-y=502&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzAmaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+### Assign Tickets to Fini
+
+Specify whether tickets should be automatically assigned to Fini upon replying. This can streamline ticket management and enable further automations within Zendesk.
+
+![Step 12 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/194e6dff-2304-46bd-9300-cf144d95d2a7/062e6751-ce05-4da0-804a-9e07c16e42b6.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=594&mark-y=602&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzMmaD02NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+## 3. Escalation Setting
+
+These settings determine how Fini behaves when an issue is escalated to a human agent.
+
+![Step 13 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/f393cbbc-3e4a-403e-83bf-ebfc0902bb75/ff5180ea-4416-4b19-bbbe-a1e72654a92e.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200)
+
+1. **Action if Escalated**:
+    - Decide if Fini should continue responding, remain silent, or send an acknowledgment message after escalating a ticket.
+
+    ![Step 14 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/d06aa9bd-8cf9-4fbc-801f-82b365191a98/710b1c6f-4ec8-4dc1-ab7f-bb4e4b1d70f4.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=596&mark-y=142&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzMmaD02NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+2. **Acknowledgment Message**:
+    - Customize the message users receive when their query is escalated. Our suggestion: "Thank you for the additional information. This will be included in the ticket for our specialized human agent team."
+
+    ![Step 15 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/11863ddc-8ce9-45bb-acaa-13c68cf6e356/518dcc5d-4223-46ea-9ec1-0d188f74ee92.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=593&mark-y=232&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzcmaD05MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+3. **Threshold Count for Escalation**:
+    - Set a maximum number of bot replies before an issue is escalated to a human.
+
+    ![Step 16 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/c803c47e-4662-465c-9dfd-1ac3ebe981f4/f86afca2-3777-42de-97a3-e8a9e4bb81ca.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=600&mark-y=388&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MjYmaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+4. **Message When Escalated via Threshold**:
+    - Customize the message users receive when the bot reaches the escalation threshold. Our suggestion: "Thank you for your message. This issue is beyond my expertise, so I have escalated it to our specialized support team."
+
+    ![Step 17 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/1a895d88-ba75-4ed6-b2a8-ba69a6ac5234/abea7e2a-962a-40ea-bf81-a86d30eb59ca.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=593&mark-y=455&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MTImaD0xNjYmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+
+
+## Zendesk Authorization
+
+![Step 18 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/5cecfbf3-6c53-49b4-911e-ab0da90102cb/ed8fa013-208c-4749-8060-00cb86dc2718.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200)
+
+### 19. Sign in to zendesk
+![Step 19 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/24abf03f-4e5c-437b-8a68-22eae2bd1e6e/07139c93-9f2e-4f5d-b7c5-34474bedcdd6.png?crop=focalpoint&fit=crop&fp-x=0.5004&fp-y=0.3005&fp-z=1.7487&w=1200&mark-x=315&mark-y=363&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01NzAmaD05MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+### 20. Type password - zendesk
+![Step 20 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/69aef4b2-d9ef-48aa-975c-ea11c3b31542/fc532ade-9757-4b55-a93f-15c02437cb6b.png?crop=focalpoint&fit=crop&fp-x=0.5004&fp-y=0.4003&fp-z=1.7487&w=1200&mark-x=315&mark-y=363&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01NzAmaD05MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+### 21. Click on Sign in zendesk
+![Step 21 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/71124548-39af-43e0-bc7c-f0c395b631ff/6342b337-53ff-4d48-9885-7d55b3b00959.png?crop=focalpoint&fit=crop&fp-x=0.5004&fp-y=0.5181&fp-z=1.7487&w=1200&mark-x=315&mark-y=363&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01NzAmaD05MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+## 4. Categorization Setting
+
+After authorization, you can enable the categorization setting
+
+![Step 22 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/ddafc4ac-bf24-4338-8a1f-63485e72170e/e7629876-abad-46af-a315-b7a53d8f94b0.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=1043&mark-y=145&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz03MSZoPTQxJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+
+
+1. **Select a Categorization Field** that already exists in Zendesk and contains the required categories.
+
+![Step 23 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/165539f0-4a3e-4454-97d7-334a170d2921/781aa052-e2d3-4ced-a374-93c669f58b68.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=588&mark-y=230&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzImaD02NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+2. **Category Add Type**:
+    - Decide whether new categories should append to each reply or overwrite the previous ones.
+
+    ![Step 24 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/bc877477-c890-4684-b99c-3f96e297fae0/07468105-faad-405f-bfa5-52b0b7d1087d.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=599&mark-y=346&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01NDEmaD02NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+3. **Category Limit**:
+    - Set the maximum number of categories per reply.
+
+    ![Step 25 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/3a7ec76e-bc65-4198-bddc-8ea2e9393cc0/9c7dcc57-ca49-4c63-ae30-9c1ff10e38fc.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=599&mark-y=441&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01NDEmaD02NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+4. **Save the changes**:
+
+![Step 26 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/58749a1b-73eb-4ce6-b134-b71ecad5ea3c/06ab3ee3-cd3b-48db-a478-ce96c940b857.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=525&mark-y=543&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz0xMjkmaD02MCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+### Configuration Complete
+
+After the categorization setting, your Zendesk setup with Fini is complete.
 
 ---
 
-After completing these steps, your Zendesk setup is complete, and Fini is ready to manage and enhance your customer support experience.
+Make sure to follow this guide thoroughly to ensure the optimal performance of Fini within your Zendesk environment. For any additional configurations or queries, refer to the detailed steps provided.
