@@ -1,0 +1,104 @@
+# Deploying Fini on Zendesk
+
+Integrating Fini with your Zendesk is straightforward and can be done in a few simple steps. Below is a detailed guide on how to deploy and configure Fini for your Zendesk account.
+
+## 1. Connect Fini to Your Zendesk
+
+1. **Access Deployment**:  
+   Navigate to the **Deploy** section within the Fini dashboard.
+2. **Select Integration**:  
+   Choose the **Zendesk integration** and click **Connect**.
+3. **Add Your Subdomain**:  
+   Enter the **subdomain** for your Zendesk account. This is a unique identifier.
+4. **Add Your Account ID**:  
+   Input your **Account ID** to establish the connection.
+5. **Proceed to Next Step**:  
+   After filling out these details, move on to the **Email Configuration** section.
+
+## 2. Configure Email Settings
+
+You'll be taken to the email configuration screen, which allows you to set up Fini's responses to Zendesk email tickets. Here's how to customize the settings:
+
+### **Select the Bot**
+
+Choose the specific **bot** you wish to deploy for managing Zendesk tickets.
+
+### **Reply Settings**
+
+The following settings determine how Fini will interact with your customers:
+
+#### **Time Delay**  
+If you want Fini to wait before responding to messages (creating a more natural, human-like interaction), set a **time delay**. The delay is in **seconds**; for example, enter `3600` to delay by an hour.
+
+#### **Debounce Lag**  
+Set a **debounce lag** to introduce a delay before the bot replies. This is particularly useful if a user sends multiple messages about the same issue. During the delay, Fini assesses all incoming messages to generate a more accurate and relevant response.
+
+#### **Reply Type**  
+Choose how Fini should respond:
+- **Direct Replies**: Fini responds directly to the customer.
+- **Internal Comments**: Fini adds internal comments visible only to agents, not the end-user.
+
+#### **Reply Type If Agent Assigned**  
+Configure how Fini behaves when a support agent is assigned to a ticket:
+- **Reply to End User**: Fini continues engaging with the customer even after agent assignment.
+- **Post Internal Comment**: Fini stops communicating directly with the customer and instead posts updates as internal comments for the support team.
+- **Go Silent**: Fini stops all activity on the ticket, allowing the agent to handle it entirely.
+
+### **PII Masking**  
+To protect **Personally Identifiable Information (PII)**, enable PII masking. When enabled, Fini will avoid using personal data (like the user's name) in responses, providing a generalized interaction.
+
+**Example**:  
+With PII masking:  
+*"Hello, how can I assist you today?"*
+
+Without PII masking:  
+*"Hello, John, how can I assist you today?"*
+
+## 3. Assign Tickets to Fini
+
+Automate ticket management by assigning tickets to Fini. This enables further automation (e.g., auto-solving tickets) and analytics within Zendesk.
+
+> **Note**: If you already have specific assignment rules in place, you may keep this option set to **No**.
+
+## 4. Configure Escalation Settings
+
+Manage Fini’s behavior for ticket escalations to human agents.
+
+### **Action if Escalated**  
+Define what happens if Fini encounters a question it cannot answer (e.g., sensitive topics):
+- **Continue Responding**: Fini will continue to engage even after escalation.
+- **Go Silent**: Fini stops replying after escalation.
+- **Send Acknowledgement Message**: Fini sends a customizable acknowledgment message to the customer once escalation occurs.
+
+**Suggested Message**:  
+> "Thank you for the additional information. This will be included in the ticket for our specialized human agent team."
+
+### **Threshold Count for Escalation**  
+Set a **threshold** for the maximum number of replies before escalation. If Fini cannot resolve an issue within a set number of replies (e.g., 5 or 10), the ticket is escalated to a human agent.
+
+**Suggested Message When Threshold is Reached**:  
+> "Thank you for your message. Unfortunately, this is outside of my expertise, and I will need to escalate this to our specialized support team. A member of our team will reach out shortly."
+
+## 5. Authorize Fini
+
+Complete the **authorization process** by clicking **Authorize**. This will establish a secure connection between Fini and your Zendesk account.
+
+## 6. Configure Ticket Categorization
+
+Once authorization is complete, a new **Categorization** section will appear.
+
+### **Enable Categorization**  
+Toggle the **Categorization** setting to allow Fini to automatically categorize tickets based on their content using AI.
+
+### **Categorization Settings**  
+1. **Select a Categorization Field**:  
+   Choose a multi-select field from Zendesk that contains all necessary categories. Fini will use this field to categorize tickets.
+2. **Category Add Type**:  
+   - **Append Categories**: Add new categories with each reply.
+   - **Overwrite Categories**: Maintain only one active category per reply.
+3. **Category Limit**:  
+   Define how many categories should be assigned per reply.
+
+---
+
+After completing these steps, your Zendesk setup is complete, and Fini is ready to manage and enhance your customer support experience.
