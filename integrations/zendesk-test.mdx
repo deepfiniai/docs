@@ -1,3 +1,13 @@
+---
+title: 'Zendesk Chat'
+description: 'Learn how to deploy Fini on your Zendesk Chat'
+icon: 'house'
+---
+
+<Tip>Create an account at [Fini AI](https://app.usefini.com) to get started</Tip>
+
+### [Deploy on Zendesk | Fini](https://app.usefini.com/dashboard/deploy)
+
 # **Fini Integration with Zendesk**
 
 This document provides a comprehensive guide to integrate Fini with Zendesk, categorized into four main sections: 
@@ -30,6 +40,34 @@ Follow the listed steps and configurations to successfully connect and optimize 
 
 ![Step 4 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/af48d64d-21b2-4607-8571-2ca8e43f85b3/5d054640-2bfc-42c4-83ed-92ab5c19c8e0.png?crop=focalpoint&fit=crop&fp-x=0.5753&fp-y=0.2080&fp-z=1.8855&w=1200&mark-x=603&mark-y=279&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01MjEmaD02OCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
+
+#### **Select 'Chat'**
+
+![Step 6 screenshot](https://images.tango.us/workflows/e3cd6bc9-549f-46a3-aa49-13b0816d2756/steps/9f36190e-ad25-4577-a126-b48bfedf5f75/9e0cb0c3-7336-4e18-9f6c-13e025b3ec46.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-y=80&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNTQmaD0zNSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+#### **Insert App ID** 
+
+    - [Where can I find my App ID?](https://www.loom.com/share/36c27c31c11c48b8a95ea28d077eb8c3?sid=9f4d9afb-39f9-4c18-b4a1-2ad29cac9458)
+
+![Step 7 screenshot](https://images.tango.us/workflows/e3cd6bc9-549f-46a3-aa49-13b0816d2756/steps/dd23fd52-01b3-460f-9abf-a5530fe437ca/2a1d201a-f19e-425d-b306-ee3b23022b96.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=611&mark-y=554&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zNjEmaD00MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+#### **Insert Key ID** 
+
+    - [Where can I find my Key ID?](https://www.loom.com/share/36c27c31c11c48b8a95ea28d077eb8c3?sid=9f4d9afb-39f9-4c18-b4a1-2ad29cac9458)
+
+
+![Step 8 screenshot](https://images.tango.us/workflows/e3cd6bc9-549f-46a3-aa49-13b0816d2756/steps/652298a4-0534-482c-82c5-fc0da019a738/57655a3a-89ea-4829-a5d3-9bda6c487e12.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=604&mark-y=593&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zNTkmaD00MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+#### **Insert Secret Key** 
+
+ - [Where can I find my Secret Key?](https://www.loom.com/share/36c27c31c11c48b8a95ea28d077eb8c3?sid=9f4d9afb-39f9-4c18-b4a1-2ad29cac9458)
+
+![Step 9 screenshot](https://images.tango.us/workflows/e3cd6bc9-549f-46a3-aa49-13b0816d2756/steps/1d65347c-ca78-42f1-b074-9cc67c1c5e8b/390e8198-ef87-4c40-bcfe-b182ef68b2e6.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-y=635&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zNTkmaD00MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
 #### **Select Bot to deploy**
 
 Once connected, you'll be automatically prompted to configure your Zendesk email ticket responses. Ensure to fill in all necessary fields as indicated.
@@ -44,16 +82,16 @@ Once connected, you'll be automatically prompted to configure your Zendesk email
 Configure how Fini will handle replies:
 
 #### **Select Time Delay**
-    - To make Fini's response time feel more human-like, you can set a delay in seconds. For instance, a 1-hour delay would be set as `3600` seconds.
+    - To make Fini's response time feel more human-like, you can set a delay in seconds. For instance, a 1-hour delay would be set as `3600` seconds. However for chat seetings we advise to keep it at 0.
 
 
-    ![Step 7 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/6fcae6c3-5e4a-4d15-952c-ec8416014de5/a75af629-4e49-45a7-bacb-c498d80ed07c.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=604&mark-y=142&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MTgmaD02MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+    ![Step 11 screenshot](https://images.tango.us/workflows/e3cd6bc9-549f-46a3-aa49-13b0816d2756/steps/93be37a1-0d1e-42a2-aca5-f94974731a0a/cf664bd9-a672-43d8-a5e5-c5cd0b3ef86f.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-y=110&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MTYmaD02MSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
 #### **Set a Debounce Lag**
     - This feature is useful for chat scenarios where the user sends information in multiple messages. Debounce lag allows the bot to wait for a specified number of seconds before responding. During this time, Fini assesses all incoming messages to generate a more relevant response based on complete understanding of the user issue.
 
 
-    ![Step 8 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/b3bb06eb-8126-4122-9581-6275b26aea92/06167582-9361-4a23-bece-882b0a930e96.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=599&mark-y=241&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MjMmaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+    ![Step 12 screenshot](https://images.tango.us/workflows/e3cd6bc9-549f-46a3-aa49-13b0816d2756/steps/830a275a-f9e4-46b4-ac35-c6d603d6c07b/81adcbfe-f074-4d1f-91c6-83ca0978edce.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=592&mark-y=231&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MjQmaD02MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
 
 #### **Choose a Reply Type**
@@ -123,7 +161,7 @@ These settings determine how Fini behaves when an issue is escalated to a human 
     ![Step 15 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/11863ddc-8ce9-45bb-acaa-13c68cf6e356/518dcc5d-4223-46ea-9ec1-0d188f74ee92.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=593&mark-y=232&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzcmaD05MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
 #### **Threshold Count for Escalation**
-    - Set a **threshold** for the maximum number of replies before escalation. If Fini cannot resolve an issue within a set number of replies (e.g., 5 or 10), the ticket is escalated to a human agent.
+    - Set a **threshold** for the maximum number of replies before escalation. If Fini cannot resolve an issue within a set number of replies (for chat we recommend to put it as high as 100), the ticket is escalated to a human agent.
 
 
     ![Step 16 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/c803c47e-4662-465c-9dfd-1ac3ebe981f4/f86afca2-3777-42de-97a3-e8a9e4bb81ca.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=600&mark-y=388&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MjYmaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
@@ -147,6 +185,9 @@ Complete the **authorization process** by clicking **Authorize** and signing in 
 #### **Sign in to your Zendesk account**
 ![Step 21 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/71124548-39af-43e0-bc7c-f0c395b631ff/6342b337-53ff-4d48-9885-7d55b3b00959.png?crop=focalpoint&fit=crop&fp-x=0.5004&fp-y=0.5181&fp-z=1.7487&w=1200&mark-x=315&mark-y=363&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01NzAmaD05MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
+#### **Click on 'Chat'**
+
+![Step 23 screenshot](https://images.tango.us/workflows/e3cd6bc9-549f-46a3-aa49-13b0816d2756/steps/2a807a3c-9d7a-4ee6-8dab-252e41c884db/5da6333d-fb67-4f53-9273-b93c9f456758.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=639&mark-y=101&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xOTMmaD00NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
 ## **Categorization Setting**
 
@@ -189,3 +230,8 @@ After the categorization setting, your Zendesk setup with Fini is complete.
 ---
 
 Make sure to follow this guide thoroughly to ensure the optimal performance of Fini within your Zendesk environment. For any additional configurations or queries, reach out to hello@usefini.com
+
+
+## [You can return to the app, your Zendesk Chat setup is complete!](https://app.usefini.com/dashboard/deploy)
+
+<br/>
