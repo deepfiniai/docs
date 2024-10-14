@@ -42,15 +42,14 @@
       "pages": ["platform/ai-knowledgebase-tips","platform/create","platform/ask","platform/invite"]
     },
     {
-      "group": "Connect your private dat",
+      "group": "Connect your private data",
       "pages": ["input-integrations/notion","input-integrations/confluence","input-integrations/googledrive","input-integrations/zendesk"]
     },
     {
-      "group": "Deployv2",
+      "group": "Deploy",
       "pages": 
       [
         [
-            "Internal",
             {
                 "group": "Fini internal deployments",
                 "pages": ["integrations/get-api-keys","integrations/standalone-chat","integrations/chat-widget","integrations/chrome-extension"]
@@ -64,7 +63,7 @@
                     "pages": ["integrations/zendeskEmail","integrations/zendeskChat"]
                   },
                   {
-                    "group": "Zendesk",
+                    "group": "Intercom",
                     "pages": ["integrations/intercomEmail","integrations/intercomChat"]
                   },
                   "integrations/slack",
