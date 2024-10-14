@@ -46,30 +46,28 @@
       "pages": ["input-integrations/notion","input-integrations/confluence","input-integrations/googledrive","input-integrations/zendesk"]
     },
     {
-      "group": "Deploy",
+      "group": "Deploy - Fini integrations",
+      "pages": ["integrations/get-api-keys","integrations/standalone-chat","integrations/chat-widget","integrations/chrome-extension"]
+    },
+    {
+      "group": "Deploy - External integrations",
       "pages": 
-        [
-            {
-                "group": "Fini internal deployments",
-                "pages": ["integrations/get-api-keys","integrations/standalone-chat","integrations/chat-widget","integrations/chrome-extension"]
-            },
-            {
-                "group": "External deployments",
-                "pages": 
-                [
-                  {
-                    "group": "Zendesk",
-                    "pages": ["integrations/zendeskEmail","integrations/zendeskChat"]
-                  },
-                  {
-                    "group": "Intercom",
-                    "pages": ["integrations/intercomEmail","integrations/intercomChat"]
-                  },
-                  "integrations/slack",
-                  "integrations/discord" 
-                ]
-            }
-        ]
+      [
+        "integrations/slack",
+        "integrations/discord",
+        {
+          "group": "Zendesk",
+          "pages": ["integrations/zendeskEmail","integrations/zendeskChat"]
+        },
+        {
+          "group": "Intercom",
+          "pages": ["integrations/intercomEmail","integrations/intercomChat"]
+        },
+        {
+          "group": "Livechat",
+          "pages": ["integrations/livechat-connection","integrations/livechat"]
+        }
+      ]
     },
     {
       "group": "API Documentation",
