@@ -62,6 +62,7 @@
         },
         {
           "group": "Intercom",
+          "icon": "intercom",
           "pages": ["integrations/intercomEmail","integrations/intercomChat"]
         },
         {
