@@ -57,6 +57,7 @@
         "integrations/discord",
         {
           "group": "Zendesk",
+          "icon":"house",
           "pages": ["integrations/zendeskEmail","integrations/zendeskChat"]
         },
         {
