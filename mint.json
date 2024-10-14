@@ -67,7 +67,7 @@
         },
         {
           "group": "Livechat",
-          "icon": "livechat",
+          "icon": "comment",
           "pages": ["integrations/livechat-connection","integrations/livechat"]
         }
       ]
