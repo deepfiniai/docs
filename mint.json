@@ -46,7 +46,7 @@
       "pages": ["input-integrations/notion","input-integrations/confluence","input-integrations/googledrive","input-integrations/zendesk"]
     },
     {
-      "group": "Deploy",
+      "group": "Deployv2",
       "pages": 
       [
         [
