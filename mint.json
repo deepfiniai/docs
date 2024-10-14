@@ -48,7 +48,6 @@
     {
       "group": "Deploy",
       "pages": 
-      [
         [
             {
                 "group": "Fini internal deployments",
@@ -71,7 +70,6 @@
                 ]
             }
         ]
-      ]
     },
     {
       "group": "API Documentation",
