@@ -66,10 +66,16 @@
           "pages": ["integrations/intercomEmail","integrations/intercomChat"]
         },
         {
+          "group": "Front",
+          "icon": "envelope-open",
+          "pages": ["integrations/frontEmail"]
+        },
+        {
           "group": "Livechat",
           "icon": "comment",
           "pages": ["integrations/livechat-connection","integrations/livechat"]
         }
+        
       ]
     },
     {
