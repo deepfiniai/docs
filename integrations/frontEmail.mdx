@@ -1,0 +1,172 @@
+---
+title: 'Front Email'
+description: 'Learn how to deploy Fini on your Front Email'
+icon: 'envelope-open'
+---
+
+<Tip>Create an account at [Fini AI](https://app.usefini.com) to get started</Tip>
+
+### [Deploy on Front | Fini](https://app.usefini.com/dashboard/deploy)
+
+# **Fini Integration with Front**
+
+This document provides a comprehensive guide to integrate Fini with Front, categorized into four main sections: 
+1. Connection Details
+2. Replies Setting
+3. Escalation Setting
+4. Categorization Setting 
+
+Follow the listed steps and configurations to successfully connect and optimize your Fini chatbot within the Front environment.
+
+## **Connection Details**
+
+
+#### **[Click on Deploy](https://app.usefini.com/dashboard/deploy)**
+
+![Step 1 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/9c1debfe-66d4-4671-91cc-d1178f114b2c/ec1ed3ea-2c9c-4fb5-a414-bfacc2f603c3.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=10&mark-y=256&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNjUmaD0zNiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+#### **Connect Front**
+
+![Step 2 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/3c36e9e9-9cf5-4bbf-805d-fecdcc717134/e187c8f4-c8a6-4176-a38e-7dd2a2ebac8b.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=790&mark-y=447&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNTMmaD0yMyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+#### **Add company admin email**
+
+![Step 4 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/da24c555-5fac-4e44-af78-0a02964bf2e7/0e01ad54-5c36-4b02-86bd-7d5030f2f671.png?crop=focalpoint&fit=crop&fp-x=0.5771&fp-y=0.2416&fp-z=2.7754&w=1200&mark-x=500&mark-y=384&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0yMDEmaD04NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+This is an email address from which your users will receive the replies. Make sure that user whose email you're going to provide is set as **Admin** in the Front settings [https://app.frontapp.com/settings/global/teammates](https://app.frontapp.com/settings/global/teammates)
+
+![Step 1 screenshot](https://images.tango.us/workflows/734cac1f-05b7-44c6-bbd7-d05dd51eb561/steps/6c5780f5-51d8-44ee-bd7a-d9d41954c075/6aba14fd-21fe-48fd-bb82-057003d4bd12.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=679&mark-y=611&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNDgmaD0yNyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+
+#### **Select Bot to deploy**
+
+Choose the bot from your account you wish to deploy.
+
+![Step 5 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/ca47b85f-791e-41a5-9307-5d903ba8ebb3/084fcb43-284b-43bc-bf17-4dd53e9e4c17.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=587&mark-y=471&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MTAmaD02MCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+## **Replies Setting**
+
+![Step 6 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/8d0b6512-5073-4034-a6c9-df0f04893875/27ba2bf3-34e6-443d-814a-715465622244.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200)
+
+Configure how Fini will handle replies:
+
+#### **Set a Debounce Lag**
+    - This feature is useful for chat scenarios where the user sends multiple messages on the same issue. The bot will wait for a specified number of seconds before responding, allowing it to update its reply based on new information.
+
+![Step 7 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/5ded5035-a72f-4d18-baab-cc3bfacf2593/55d53bc2-48ac-4279-987f-ee4fd5c34dab.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=595&mark-y=131&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MzQmaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+#### **Choose a Reply Type**
+
+Fini supports two types of replies:
+- **Direct Replies**: Direct responses to customers.
+- **Internal Comments**: Internal notes visible only to your support agents.
+
+![Step 8 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/8bfce238-a2a2-417f-9e4a-1c4a3611145a/bcacb8b6-24fa-4139-8851-f64426b01f48.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=596&mark-y=215&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MzEmaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+#### **Reply Type if Agent Assigned**
+
+Configure how Fini behaves when a support agent is assigned to a ticket:
+- **Reply to End User**: Fini continues engaging with the customer even after agent assignment.
+- **Post Internal Comment**: Fini stops communicating directly with the customer and instead posts updates as internal comments for the support team.
+- **No Reply**: Fini stops all activity on the ticket, allowing the agent to handle it entirely.
+
+
+![Step 9 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/9d25766f-0de3-4043-abf5-a9a6d122dd41/7fd28098-3179-4e4b-a9a1-34edde3933bc.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=589&mark-y=282&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MjQmaD02MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+#### **PII Masking**
+
+To protect **Personally Identifiable Information (PII)**, enable PII masking. When enabled, Fini will avoid using personal data (like the user's name, email etc.) in responses, providing a generalized interaction.
+
+**Example**:  
+With PII masking:  
+*"Hello, how can I assist you today?"*
+
+Without PII masking:  
+*"Hello, John, how can I assist you today?"*
+
+![Step 10 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/3a46244d-6dab-44a2-8fb8-fa4ecf082e17/e8d4dd0d-6dd9-4a3e-b09c-c627c2a6da60.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=598&mark-y=402&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MjAmaD02MSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+##  **Escalation Setting**
+
+These settings determine how Fini behaves when an issue is escalated to a human agent.
+
+![Step 1 screenshot](https://images.tango.us/workflows/2f3f2eb5-a84d-49b5-80a0-53589d64f36d/steps/f315700f-352a-4361-937c-7141a005c7e1/1cca65b7-83b5-44ce-9651-87111cfa9b9f.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200)
+
+####  **Action if Escalated**
+    Define what happens if Fini encounters a question it cannot answer (e.g., sensitive topics):
+    - **Continue Responding**: Fini will continue to engage even after escalation.
+    - **No Reply**: Fini stops replying after escalation.
+    - **Send Acknowledgement Message**: Fini sends a customizable acknowledgment message to the customer once escalation occurs.
+
+    **Suggested Message**
+    > "Thank you for the additional information. This will be included in the ticket for our specialized human agent team."
+
+![Step 12 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/cbf13d9d-2cfc-4d49-a92a-6f26f9a912ec/c3363a63-f6bc-4347-8282-44564cec8bc5.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=597&mark-y=125&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MjQmaD02MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+#### **Acknowledgment Message**
+    - Customize the message users receive when their query is escalated. 
+
+    **Suggested Message**:  
+    > "Thank you for the additional information. This will be included in the ticket for our specialized human agent team."
+
+![Step 1 screenshot](https://images.tango.us/workflows/b02527e8-30cc-425c-9c11-a942316791c0/steps/9af4ac61-86d0-446e-8b1c-755d9109e735/f321cb20-96aa-4ea5-be12-7b3625b0d38a.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=586&mark-y=213&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MjMmaD05MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+#### **Threshold Count for Escalation**
+    - Set a **threshold** for the maximum number of replies before escalation. If Fini cannot resolve an issue within a set number of replies (e.g., 5 or 10), the ticket is escalated to a human agent.
+
+
+![Step 14 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/cd7cb895-f287-4b24-abe7-b6c4224b0bed/a47c7b2a-d420-4fb9-b4a5-9d4add5d6748.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=608&mark-y=342&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NDAmaD02NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+#### **Message When Escalated via Threshold**
+    - Customize the message users receive when the bot reaches the escalation threshold. 
+
+    **Suggested Message When Threshold is Reached**:  
+    > "Thank you for your message. Unfortunately, this is outside of my expertise, and I will need to escalate this to our specialized support team. A member of our team will reach out shortly."
+
+
+![Step 15 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/35464d74-84a1-4e3e-8e2a-1e4167d3ccb5/13b4d50c-5892-4724-a1e0-b1766a7931ca.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=607&mark-y=432&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MzkmaD0xNzMmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+
+
+## **Categorization Setting**
+
+![Step 16 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/7871247b-ade9-4b8d-8f29-6176784e6d21/362477bc-243f-4170-8156-bfa64d2f6037.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=32&mark-y=20&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNjImaD00NyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+
+
+#### **Enable Categorization**  
+Toggle the **Categorization** setting to allow Fini to automatically categorize tickets based on their content using AI.
+
+![Step 17 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/95627767-9210-4988-9477-085bbe2f051c/8a568596-0892-477a-a510-ee75451c4b29.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=1060&mark-y=122&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04NyZoPTQ3JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+
+
+## Complete the process by clicking **Authorize**
+
+![Step 18 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/e0edee0c-2904-4938-8852-2678d07bcefc/6ef4ef5b-5b7d-47c8-8506-6459259e39c1.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=570&mark-y=299&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNjUmaD01MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+#### **Front Authorization**
+
+When redirected to Front sign in to your account 
+
+![Step 19 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/04bd51af-6876-4960-ba43-352b4e76e6c1/5f83f550-020f-4491-9e95-2b7172776374.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=163&mark-y=729&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04MTEmaD0xNjMmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+
+
+And click on **Authorize**
+![Step 20 screenshot](https://images.tango.us/workflows/359bbbef-60b4-4a37-a69f-6016dd3d0058/steps/02ae80b8-6625-49df-9ef1-c59835cfae77/7e8ba2f7-7299-41da-82a1-bb8d968913ba.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=336&mark-y=415&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNTkmaD0xMjQmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+
+### **Configuration Complete**
+
+Your Front setup with Fini is complete. If you wish to change some of the settings go back to the [Deploy Page](https://app.usefini.com/dashboard/deploy) and select **Edit integration**
+
+---
+
+Make sure to follow this guide thoroughly to ensure the optimal performance of Fini within your Front environment. For any additional configurations or queries, reach out to hello@usefini.com
+
+## [You can return to the app, your Zendesk setup is complete!](https://app.usefini.com/dashboard/deploy)
+
+<br/>
