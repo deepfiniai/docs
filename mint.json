@@ -71,11 +71,15 @@
           "pages": ["integrations/frontEmail"]
         },
         {
+          "group": "Hubspot",
+          "icon": "hubspot",
+          "pages": ["integrations/hubspotEmail"]
+        },
+        {
           "group": "Livechat",
           "icon": "comment",
           "pages": ["integrations/livechat-connection","integrations/livechat"]
-        }
-        
+        } 
       ]
     },
     {
