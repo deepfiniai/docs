@@ -73,7 +73,7 @@
         {
           "group": "Hubspot",
           "icon": "hubspot",
-          "pages": ["integrations/hubspotEmail"]
+          "pages": ["integrations/hubspotEmail","integrations/hubspotChat"]
         },
         {
           "group": "Livechat",
