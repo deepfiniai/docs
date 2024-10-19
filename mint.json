@@ -47,7 +47,11 @@
     },
     {
       "group": "Deploy - Fini integrations",
-      "pages": ["integrations/get-api-keys","integrations/standalone-chat","integrations/chat-widget","integrations/chrome-extension"]
+      "pages": ["integrations/get-api-keys",
+        "integrations/fini-chat-widget",
+        "integrations/fini-search-bar",
+        "integrations/fini-standalone-chat",
+        "integrations/chrome-extension"]
     },
     {
       "group": "Deploy - External integrations",
