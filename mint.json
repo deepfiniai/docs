@@ -42,6 +42,10 @@
       "pages": ["platform/ai-knowledgebase-tips","platform/create","platform/ask","platform/invite"]
     },
     {
+      "group": "Features",
+      "pages": ["features/knowledge-items"]
+    },
+    {
       "group": "Connect your private data",
       "pages": ["input-integrations/notion","input-integrations/confluence","input-integrations/googledrive","input-integrations/zendesk"]
     },
