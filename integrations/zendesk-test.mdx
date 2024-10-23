@@ -14,7 +14,7 @@ The below guide is divided into five sections:
 1. Default bots
 2. Knowledge Item Creation
     - Create knowledge (question, answer, instructions)
-    - Keywords, categories, escalation, similar questions
+    - Metadata (Keywords, categories, escalation, similar questions)
     - Select bot
     - Statuses
 3. Edit Knowledge Items
@@ -47,96 +47,67 @@ Note: You will have the option to change bot selection for every new knowledge i
 </Steps>
 
 
+## Create knowledge
 
-### **Click on Knowledge Items**
-![Step 1 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/0c4c6a47-42c0-4f44-b423-110acaca41d2/8c2336cd-8729-422e-93d6-6804ddc2d111.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=10&mark-y=150&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNTgmaD0zNSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-### **Click on *Create new***
-
-![Step 7 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/9b67fdcf-61fd-4b2f-89e4-e1f7dbebe4bd/4243a043-c03d-4067-bd42-b840758b72be.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=1089&mark-y=35&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDEmaD0zNyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+In this section you will create the knowledge by adding question, answer, and instructions
 
 
-## Knowledge Item Creation
-
-### **Insert the question**
-![Step 8 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/31881f53-1ca7-4317-9922-02f3011e8091/8976a341-fb22-4f85-9146-407490287e2f.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=44&mark-y=158&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTM4Jmg9ODkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-
-
-### **Type in the answer**
-
-Sometimes it happens that the answer isn't always straightforward. Fini enables you to add steps the bot needs to take in order to provide the final answer.
-
-In order to make it clear for the bot you can use this formatting:
-
-![Step 10 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/fe8fb852-2c07-40d2-a5bb-ff04ca1466ba/abfa852a-9f89-48d9-b0e0-ec21d7b3dc71.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=46&mark-y=274&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTI1Jmg9MzAyJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
-
-### **Add instructions**
-
-Fini allows for adding instructions per specific Knowledge item. In this specific case we want the bot to escalate this conversation only after the 2nd step when it says it will connect the user with a human agent.
-
-By adding this instruction you can influence the bot behavior per Knowledge item.
-
-![Step 9 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/8badf11f-f7cc-49eb-90d8-c9b9dce9f343/ab8a3dbb-d32b-4fb8-af26-4175cbc41cb9.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=43&mark-y=642&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTMwJmg9MTA4JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+<Steps>
+  <Step title="**Add your question**">
+    ![Step 8 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/31881f53-1ca7-4317-9922-02f3011e8091/8976a341-fb22-4f85-9146-407490287e2f.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=44&mark-y=158&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTM4Jmg9ODkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+  <Step title="**Add your answer**">
+    Note: For situations when the answer is complex (eg: multi-step answer, scenario based answers), it's better to add splitters (##, <Step> etc.) to format the answer
+    ![Step 10 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/fe8fb852-2c07-40d2-a5bb-ff04ca1466ba/abfa852a-9f89-48d9-b0e0-ec21d7b3dc71.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=46&mark-y=274&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTI1Jmg9MzAyJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+  </Step>
+  <Step title="**Add instructions**">
+    This field is helpful when you want to give instructions to the bot specific to the knowledge item. For eg: In this specific case we want the bot to escalate this conversation only after the 2nd step when it says it will connect the user with a human agent.
+    ![Step 9 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/8badf11f-f7cc-49eb-90d8-c9b9dce9f343/ab8a3dbb-d32b-4fb8-af26-4175cbc41cb9.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=43&mark-y=642&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTMwJmg9MTA4JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+  </Step>
+</Steps>
 
 
-## 1.2. Keywords, Categories, Escalation & Similar Questions
+## Knowledge Metadata
 
-### **Add keywords**
+In this section you can add metadata including - Keywords, Categories, Escalation & Similar Questions
 
-Adding keywords make it easier for the model to connect specific query with the answer.
-
-![Step 11 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/b72bef0c-f1da-41d6-b32f-7fe911660e03/6a0c0c5d-5be6-4257-ad99-27ce9e2a0a2b.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=225&mark-y=36&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05MDImaD01MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-### **Add Category**
-
-This value should match your categories in your support tool so that whenever Fini replies with this specific answer the model uses a matching category.
-
-![Step 12 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/169177ae-6ef3-4b6b-80ae-21eb57656ce7/0c1cc04b-380e-4120-a3ea-ebd80b382615.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=228&mark-y=93&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04OTImaD01MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-### **Add a Subcategory**
-
-For more granular categorization 
-
-![Step 13 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/edc481f1-edc1-4b01-9ffe-0f0046290f10/6e5ccd53-e9aa-4a49-94ac-e163afe407f9.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=228&mark-y=227&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00NjEmaD01MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-### **Select escalation value**
-
-Escalation underneath a knowledge item is just for you to know later on how many KI require escalation. To make it easier in the future to focus on improving processess related to specific questions. It's not influencing bot's behavior.
-
-![Step 14 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/23a4413d-d467-49d3-98a2-9521389c313f/ac8a8627-bc07-4ff5-8864-fb5fb9f9923d.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=235&mark-y=287&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zMDQmaD01NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+<Steps>
+  <Step title="**Add Keywords**">
+    Adding keywords make it easier for the AI agent to connect user queries with the knowledge item
+    ![Step 11 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/b72bef0c-f1da-41d6-b32f-7fe911660e03/6a0c0c5d-5be6-4257-ad99-27ce9e2a0a2b.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=225&mark-y=36&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05MDImaD01MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  </Step>
+  <Step title="**Add Category**">
+    Fini leverages AI to categorize all incoming queries. When a response includes a specific knowledge item, we'll automatically tag it with the corresponding category. This helps you gain valuable product insights in the Analytics tab.
+    ![Step 12 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/169177ae-6ef3-4b6b-80ae-21eb57656ce7/0c1cc04b-380e-4120-a3ea-ebd80b382615.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=228&mark-y=93&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04OTImaD01MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  </Step>
+  <Step title="**Add Subcategory**">
+    For more granular categorization 
+    ![Step 13 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/edc481f1-edc1-4b01-9ffe-0f0046290f10/6e5ccd53-e9aa-4a49-94ac-e163afe407f9.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=228&mark-y=227&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00NjEmaD01MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  </Step>
+  <Step title="**Select escalation value**">
+    Mark this as TRUE if you want the bot to escalate for this knowledge item
+    ![Step 14 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/23a4413d-d467-49d3-98a2-9521389c313f/ac8a8627-bc07-4ff5-8864-fb5fb9f9923d.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=235&mark-y=287&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zMDQmaD01NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  </Step>
+  <Step title="**Add similar questions**">
+    Users can ask questions with different business context, which can confuse the AI agent. Adding similar questions helps the model better understand the intent and provide the right answer in various scenarios.
+    ![Step 17 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/cea281ac-2769-4e30-898c-b9860f4bd126/abd2e000-fc8e-459e-926e-ee50a2545a99.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=226&mark-y=370&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04MjQmaD01NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  </Step>
+</Steps>
 
 
-### **Add similar questions**
+## Knowledge Status
 
-Users can ask about the same thing in different ways. Sometimes the bot might miss the context and not associate the reply with specifically phrased question. Adding a similar question fixes this issue and allows the model to pull the corrected answer when needed.
+In this section you can define the status for a knowledge item
 
-![Step 15 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/68a2564a-39df-4cb2-9534-86fcbb6201e4/7b1c82c7-7782-471a-904b-9ac55cb68476.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=233&mark-y=307&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04NzAmaD01NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-### **Add multiple similar questions**
-
-![Step 16 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/b3aa6693-93c2-47d3-9ef0-c2a83ef0f1d6/4a29c87b-1f04-4531-af35-ed68f786d362.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=1100&mark-y=315&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NCZoPTU1JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
-
-
-![Step 17 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/cea281ac-2769-4e30-898c-b9860f4bd126/abd2e000-fc8e-459e-926e-ee50a2545a99.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=226&mark-y=370&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04MjQmaD01NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-## 1.3. Statuses
-
-Once the Knowledge Item is ready you can move over to the status section and decide to set the status to:
+There are 3 possible statuses
 
 1. "Live" so that Fini can start using it straight away
 
 2. "Draft" if you know you'll have to work on it
     
 3. "In review" in case there is someone who needs to approve the final version.
-    
 
-_Fini won't use a Knowledge item unless the status is set as LIVE_
+<Warning>Fini won't use a Knowledge item unless the status is set as LIVE</Warning>
 
 ![Step 18 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/3518e66f-75ed-4fc9-99c2-f7027591f0c9/bfc6a881-ea29-44a3-97e4-79ba16a4be39.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=930&mark-y=167&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yMzkmaD0yMDEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
 
