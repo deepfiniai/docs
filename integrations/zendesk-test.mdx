@@ -1,216 +1,125 @@
 ---
-title: 'Fini Knowledge Items'
-description: 'Learn how to manage knowledge items'
-icon: 'knowledge'
+title: 'Fini Analytics'
+description: 'Learn how to manage Analytics tab'
+icon: 'face-smiling-hands'
 ---
 
-<Tip>Read more on the feature [here](https://www.usefini.com/post/introducing-fini-knowledge-items-simplifying-your-customer-knowledge-management#:~:text=What%20Are%20Fini%20Knowledge%20Items,questions%20in%20one%20centralized%20location.)</Tip>
+<Tip>Read more on the feature [here](https://www.usefini.com/post/analytics-feature-overview) </Tip>
 
-<Card title="Knowledge Items" icon="book" href="https://app.usefini.com/dashboard/knowledge-items">
-  Fini Knowledge Items is centralized knowledge for your AI agent. It allows you to consolidate all your macros, question-answer pairs, and similar questions in one centralized location. 
+<Card title="Analytics" icon="book" href="https://app.usefini.com/dashboard/analytics">
+  Fini Analytics is centralized space to gather data about past conversations, categories & resolution rate.
 </Card>
 
-The below guide is divided into five sections:
-1. Default bots
-2. Knowledge Item Creation
-    - Create knowledge (question, answer, instructions)
-    - Metadata (Keywords, categories, escalation, similar questions)
-    - Select bot
-    - Statuses
-3. Edit Knowledge Items
-4. Filter Knowledge Items
-5. Delete Knowledge Items
+The below guide is divided into four sections:
+1. Analytics tab overview 
+2. Main Metrics
+3. Filtering 
+4. Graphic representation of data
 
 
-## **Define Default Bots**
+## **1. Analytics tab overview**
 
-First step is to define "Default bots" (one or multiple) for your knowledge items. By default all new knowledge items will be added to default bots. 
-
-Note: You will have the option to change bot selection for every new knowledge item
-
-![Step 4 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/0d7a7e79-1d93-461b-81b1-94bdbc84b6fd/bff58518-2bb7-4434-b5c5-46be551fcdc2.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=988&mark-y=35&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDYmaD0zNyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-### **Select bots & Save your selection**
-![Step 5 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/e710578b-d276-4382-8840-5f44f031acd6/9a3b9e24-9b9d-491d-9fd6-5214a8b5a32f.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=232&mark-y=476&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz03NjcmaD0xMTAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-
-
-
-## **Knowledge Item Creation**
+Analytics tab is easily accessible through your Fini [panel](https://app.usefini.com/dashboard/analytics)
 
 <Steps>
-  <Step title="Click on Knowledge Items">
-    ![Step 1 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/0c4c6a47-42c0-4f44-b423-110acaca41d2/8c2336cd-8729-422e-93d6-6804ddc2d111.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=10&mark-y=150&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNTgmaD0zNSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  <Step title="Click on Analytics">
+    ![Step 15 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/4c20fc63-cbb4-40fc-8f0b-dc3cf2acf83c/777cb376-2dd3-4166-8944-61bdca6b7d52.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=6&mark-y=310&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNjUmaD0zMyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
   </Step>
-  <Step title="Click on *Create new*">
-    ![Step 7 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/9b67fdcf-61fd-4b2f-89e4-e1f7dbebe4bd/4243a043-c03d-4067-bd42-b840758b72be.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=1089&mark-y=35&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDEmaD0zNyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  <Step title="Select a bot">
+    ![Step 16 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/fc3b23d9-f2c2-46db-8930-7283fb124397/43b5f871-6dc6-4f43-89f0-3cdd2b0c5859.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=685&mark-y=5&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04MiZoPTI2JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+  </Step>
+  <Step title="Select timeframe">
+    ![Step 17 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/333ce512-0593-4bed-9e32-c50fe7a5b662/62025997-ebbe-4e8e-97d5-894427ad54c7.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=914&mark-y=6&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00MiZoPTI0JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+  </Step>
+  <Step title="Decide whether you want to see analytics per message or aggregated data per conversation">
+    ![Step 18 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/f440b62b-4533-487e-aea8-fc4be6d3a557/c79053e8-90fa-4883-b5ed-de09dac81a9b.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=1101&mark-y=94&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05MiZoPTM2JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+  </Step>
+
+  **You can go to chat history**
+
+    If you'd like to see full conversations you can do so by clicking on 'See Related Conversations'
+    ![Step 19 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/13b2b906-94fb-41b0-a938-b6f28bd54bc8/11279903-f9a3-492d-9064-fec2a834056d.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=104&mark-y=101&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yMDImaD0zMSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+</Steps>
+
+## **2. Main metrics**
+
+<Steps>
+  <Step title="Usage">
+    Total number of responses by Fini
+    ![Step 21 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/5783d017-cb26-4a4d-9bd9-a7ea2b24edcb/a3bba227-528b-4596-99df-65dfaca13d1f.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=12&mark-y=147&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNDAmaD0xMDgmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+  <Step title="Fini Resolution Rate">
+    %of conversation completely handled by Fini
+    ![Step 22 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/d13a89a5-d313-4724-b8b3-1e630a959e00/4340b5b1-c056-4618-b5c8-f7c398db4516.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=246&mark-y=150&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNDAmaD0xMDgmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+  <Step title="Agent Transfer Rate">
+    %of responses transferred to agents
+    ![Step 23 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/7fb9ae0f-dd94-42cf-ae57-1ea314ffe78c/177085a0-e72f-48c6-a4c5-d73451544dd4.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=478&mark-y=151&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNDAmaD0xMDgmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+  <Step title="Negative Feedback">
+    %of responses with negative feedback
+    ![Step 24 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/74de4d73-6575-4b76-8809-6614614e9a43/9001a896-f5a3-4a3b-9ffc-9fe07cdd2551.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=715&mark-y=147&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNDAmaD0xMDgmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+  <Step title="Content in KB">
+    %of responses with associated KB content
+    ![Step 25 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/1bc31d4d-bf5b-4c8b-9e6c-51e1719d1e7c/447b1b9a-2920-49f4-8922-891157f7fd10.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=949&mark-y=148&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNDAmaD0xMDgmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
   </Step>
 </Steps>
 
 
-### **Create knowledge**
+## **3. Filtering**
+You can filter the data by:
 
-In this section you will create the knowledge by adding question, answer, and instructions
+1. Source: Easily see where each chat originated, whether from your website, social media, or other platforms.
+2. Channel: Email/Chat
+3. Category: Categories which are applied to every reply/ conversation (depending on your setting)
+4. Feedback: Chats in slack, widget or standalone link can be voted with thumbs up or down. Here you can see aggregated numbers of reviews.
+5. Escalation: Yes/No
+6. Reference links: Yes/No (Show replies which got a reference link)
 
+![Step 1 screenshot](https://images.tango.us/workflows/d1ff1aef-4498-4f9e-ac9f-1f51c959b16b/steps/4556724e-791d-4fdf-9dc3-749df49eda86/a4cc5d84-6092-4672-95f4-7ba9d43c1eec.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=68&mark-y=601&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDY0Jmg9MTEwMSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
+## **4. Graphic respresenatation of data**
+This section visually depicts information through charts and graphs to facilitate easier understanding and analysis.
 <Steps>
-  <Step title="Add your question">
-    ![Step 8 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/31881f53-1ca7-4317-9922-02f3011e8091/8976a341-fb22-4f85-9146-407490287e2f.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=44&mark-y=158&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTM4Jmg9ODkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  <Step title="Usage per day">
+    Number of conversations per day
+    ![Step 26 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/6258a304-e555-4ca7-a3bf-97752dd603b0/99f7f108-e6a7-4e63-a168-98aa38b649c3.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200)
   </Step>
-  <Step title="Add your answer">
-    Note: For situations when the answer is complex (eg: multi-step answer, scenario based answers), it's better to add splitters (##, Steps etc.) to format the answer
-    ![Step 10 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/fe8fb852-2c07-40d2-a5bb-ff04ca1466ba/abfa852a-9f89-48d9-b0e0-ec21d7b3dc71.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=46&mark-y=274&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTI1Jmg9MzAyJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+  <Step title="Category">
+    ![Step 27 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/d26d7e2a-c0f0-4bec-a180-e53b7eb275dc/7fa8b39b-1100-4e3c-a14f-8d83f81f492d.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=10&mark-y=15&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNDQmaD01MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
   </Step>
-  <Step title="Add instructions">
-    This field is helpful when you want to give instructions to the bot specific to the knowledge item. For eg: In this specific case we want the bot to escalate this conversation only after the 2nd step when it says it will connect the user with a human agent.
-    ![Step 9 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/8badf11f-f7cc-49eb-90d8-c9b9dce9f343/ab8a3dbb-d32b-4fb8-af26-4175cbc41cb9.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=43&mark-y=642&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTMwJmg9MTA4JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+  <Step title="Usage by source"> 
+    ![Step 28 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/26efcc8d-4abb-49d3-8067-4f31647d0081/e997953e-98c6-4575-9e90-59fe0ff684bb.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=53&mark-y=37&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MjUmaD00NjMmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+  <Step title="Usage by channel">
+    ![Step 29 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/da0b4178-e932-40a3-ab97-9c1cc3dcbe5e/fce5d5dc-f7c9-4ce3-b702-6686b94e78c8.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=620&mark-y=38&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NDUmaD00NzkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+  <Step title="Chats solved by Fini">
+    ![Step 30 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/da42748f-594a-4ae1-be46-8d355a562ec5/e3d7da20-78b9-4850-a12e-496e2d4dc597.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=11&mark-y=7&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zODYmaD0zNDcmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+  <Step title="Resolution rate"> 
+    % of responses completely handled by Fini per day
+    ![Step 31 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/9ce80851-9662-451b-8761-2a54331b110f/596794fa-3307-4894-9321-a61e46db44ac.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=439&mark-y=6&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz03NDEmaD0zNTImZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+  <Step title="Associated content in Knowledge base">
+    ![Step 32 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/efa10fec-af66-4367-ae15-bf7d75fe5773/9ea1fd74-eede-40ad-be7f-927b442455b0.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=18&mark-y=16&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zOTMmaD0zNDUmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+  <Step title="Reference links rate">
+    % of responses with associated KB content per day
+    ![Step 33 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/7b1a07ab-262e-48cf-b3e6-bb57d2c89ba7/de0eaddf-e823-4a12-be20-dfe145a93722.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=439&mark-y=12&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz03NDEmaD0zNDkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+  <Step title="Total feedback">
+    Chats in slack, widget or standalone link can be voted with thumbs up or down. Here you can see aggregated numbers of reviews.
+    ![Step 35 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/c2799b5e-1bb2-4685-bc82-a4ccb79342c2/5ff54225-67fc-4a11-a087-8d7dd40bb512.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=11&mark-y=20&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zOTUmaD0zNDYmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+  <Step title="Feedback rate">
+    % of responses with positive/ negative feedback per day
+    ![Step 34 screenshot](https://images.tango.us/workflows/640a3731-8574-4e33-9174-6b330b66ed09/steps/e7f81cb2-7492-49f5-bd6d-39bb436a446c/9181454c-622a-451f-97bc-65d69fc4de61.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=439&mark-y=18&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz03MzkmaD0zNDcmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
   </Step>
 </Steps>
-
-
-### **Knowledge Metadata**
-
-In this section you can add metadata including - Keywords, Categories, Escalation & Similar Questions
-
-<Steps>
-  <Step title="Add Keywords">
-    Adding keywords make it easier for the AI agent to connect user queries with the knowledge item
-    ![Step 11 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/b72bef0c-f1da-41d6-b32f-7fe911660e03/6a0c0c5d-5be6-4257-ad99-27ce9e2a0a2b.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=225&mark-y=36&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05MDImaD01MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-  <Step title="Add Category">
-    Fini leverages AI to categorize all incoming queries. When a response includes a specific knowledge item, we'll automatically tag it with the corresponding category. This helps you gain valuable product insights in the Analytics tab.
-    ![Step 12 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/169177ae-6ef3-4b6b-80ae-21eb57656ce7/0c1cc04b-380e-4120-a3ea-ebd80b382615.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=228&mark-y=93&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04OTImaD01MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-  <Step title="Add Subcategory">
-    For more granular categorization 
-    ![Step 13 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/edc481f1-edc1-4b01-9ffe-0f0046290f10/6e5ccd53-e9aa-4a49-94ac-e163afe407f9.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=228&mark-y=227&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00NjEmaD01MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-  <Step title="Select escalation value">
-    Mark this as TRUE if you want the bot to escalate for this knowledge item
-    ![Step 14 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/23a4413d-d467-49d3-98a2-9521389c313f/ac8a8627-bc07-4ff5-8864-fb5fb9f9923d.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=235&mark-y=287&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zMDQmaD01NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-  <Step title="Add similar questions">
-    Users can ask questions with different business context, which can confuse the AI agent. Adding similar questions helps the model better understand the intent and provide the right answer in various scenarios.
-    ![Step 17 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/cea281ac-2769-4e30-898c-b9860f4bd126/abd2e000-fc8e-459e-926e-ee50a2545a99.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=226&mark-y=370&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04MjQmaD01NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-</Steps>
-
-
-### **Knowledge Status**
-
-In this section you can define the status for a knowledge item
-
-There are 3 possible statuses
-
-1. "Live" so that Fini can start using it straight away
-
-2. "Draft" if you know you'll have to work on it
-    
-3. "In review" in case there is someone who needs to approve the final version.
-
-<Warning>Fini won't use a Knowledge item unless the status is set as LIVE</Warning>
-
-![Step 18 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/3518e66f-75ed-4fc9-99c2-f7027591f0c9/bfc6a881-ea29-44a3-97e4-79ba16a4be39.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=930&mark-y=167&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yMzkmaD0yMDEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-
-### **Select Bot and Save Knowledge**
-
-In this section you can learn how to change the bot and set your knowledge live
-
-<Steps>
-  <Step title="Select bot">
-    Select the bot you'd like to add your knowledge item to. If no selection is made, the default bot will be used.
-    ![Step 19 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/8352efb1-5896-4009-9a23-964d474d44b0/417f2c52-e6ab-48b8-88a6-0a8789b0ecf1.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=94&mark-y=374&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDA3Jmg9MjkwJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
-  </Step>
-  <Step title="Save Knowledge">
-    Once you've completed the Knowledge Item setup you can click on Save Knowledge and wait for the system to process it. It typically takes 30 seconds
-    ![Step 20 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/dc8137ca-aed6-4b5a-b52d-7276864e40d8/6e1e91cc-ca37-41c0-a431-ae2aff2f5514.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=1060&mark-y=20&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMzAmaD0zOCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-  <Step title="Knowledge Item creation in progress">
-    The orange dot indicate that KI is being added to the Knowledge of the bot
-    ![Step 21 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/06f2e3fc-9d4d-4231-8b39-24a988a191f0/9988a2c9-db78-46cd-b9e7-def73abad86c.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=976&mark-y=174&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00NSZoPTIyJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
-  </Step>
-  <Step title="Knowledge Item is live">
-    As soon as the dot changes it's color to green it means that the bot training process is complete
-    ![Step 22 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/2a8108c7-e346-402f-9bc3-aaab3d6772d1/bd00558a-0b1b-455d-bd36-61159c7a9482.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=971&mark-y=173&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00NSZoPTIyJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
-  </Step>
-</Steps>
-
-## **Edit [Knowledge Items](https://app.usefini.com/dashboard/knowledge-items)**
-
-Click on the edit icon or double-click on the row that you want to edit
-
-![Step 23 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/36ad2988-2a74-4a0c-b176-e4281bafac7a/8fee4432-5ee5-4fe1-b264-1346a3eb7036.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=1138&mark-y=175&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yMiZoPTIyJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
-
-Once you enter the knowledge item, you can make edits to any section and click on "Save knowledge"
-
-
-### **Knowledge item history**
-
-In this section you can easily see
-
-*   who and when has created the Knowledge Item
-*   and who and when has made some updates
-
-![Step 24 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/ec9020cb-7a9e-4fe8-abc5-47ad44bb5e0e/12ff2390-dbdb-494e-99fd-5c1c7193468e.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=973&mark-y=90&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yMDUmaD0yNDEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-
-
-## **Filter [Knowledge Items](https://app.usefini.com/dashboard/knowledge-items)**
-
-
-### **Filter by Bot**
-
-Here you can select the bot for which you want to filter the knowledge items on
-
-![Step 2 screenshot](https://images.tango.us/workflows/9f15e459-46ab-4ad4-8f27-09bcc6a215e1/steps/47d0b826-0d08-4c5a-9ac9-fdf74b9afdac/8262ab2e-677d-4fad-9dfa-2087d65331e1.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=818&mark-y=25&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xOTcmaD0zNiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-### **Metadata Filters**
-
-You can filter knowledge items by:
-
-1.  User (Who has created the KI)
-    
-2.  Status (Live, In Review, Draft)
-    
-3.  Number (of the KI on your account)
-    
-4.  Question (can be a part of the question, or just a word)
-    
-5.  Category
-    
-6.  Subcategory
-    
-7.  Keyword
-    
-8.  Escalation (yes or no)
-    
-9.  Answer (can be a part of the answer, or just a word)
-
-
-Once you've applied all of the filters, you will see all of the knowledge items that match these filter criteria
-
-![Step 3 screenshot](https://images.tango.us/workflows/94aa2f9e-ee81-4471-ba29-3329befea3d9/steps/1fe6473a-bd9c-46e7-a0a1-e8de2f763f69/870a3dcb-3b2f-42ea-ba7d-5bd3bca94577.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=99&mark-y=99&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MzUmaD0zNyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-## **Delete [Knowledge Items](https://app.usefini.com/dashboard/knowledge-items)**
-
-If you don't need a specific knowledge item in future, instead of changing it's status to draft / in review you can simply delete the whole row.
-
-
-<Steps>
-  <Step title="Click on the bin icon">
-    ![Step 4 screenshot](https://images.tango.us/workflows/94aa2f9e-ee81-4471-ba29-3329befea3d9/steps/a1810040-56d3-4f33-ba44-06d8f2562050/12b6cebf-8ffd-4c5f-8dba-4114c02047ea.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=1146&mark-y=243&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNiZoPTI2JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
-  </Step>
-  <Step title="Click on Delete Item">
-    ![Step 6 screenshot](https://images.tango.us/workflows/94aa2f9e-ee81-4471-ba29-3329befea3d9/steps/4faf8836-f812-40f5-a7c9-c495754434a8/f1ec33c7-baab-4ee0-949f-184f6dffafb3.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=993&mark-y=309&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNzImaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-</Steps>
-
-
-You've now successfully delete the knowledge item. 
-
 
 ## **Congratulations!**
 
-You've now mastered the essential functionalities of Fini Knowledge Items. By following this guide, you have learned how to create, edit, find, and manage Knowledge Items effectively. Remember, the more organized and detailed your Knowledge Items are, the more efficient your customer support will be.
-
-Utilize the features such as keywords, categories, and similar questions to enhance the accuracy and relevance of the responses provided by your bots. Regularly review and update your Knowledge Items to ensure they remain up to date.
-
-If you have any questions or need further assistance, don't hesitate to reach out to us at hello@usefini.com. Happy knowledge managing!
+You're now acquainted with Fini Analytics tab. With this data you have acceess to more insights and you can gain a better understanding of your users' issues. 
+If you have any questions or need further assistance, don't hesitate to reach out to us at hello@usefini.com. Happy analyzing!
