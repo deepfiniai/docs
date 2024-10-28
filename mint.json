@@ -43,7 +43,7 @@
     },
     {
       "group": "Features",
-      "pages": ["features/knowledge-items"]
+      "pages": ["features/knowledge-items","features/analytics"]
     },
     {
       "group": "Connect your private data",
