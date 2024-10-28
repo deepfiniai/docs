@@ -43,7 +43,9 @@
     },
     {
       "group": "Features",
-      "pages": ["features/knowledge-items","features/analytics"]
+      "pages": ["features/knowledge-items",
+                "features/analytics",
+                "features/chat-history"]
     },
     {
       "group": "Connect your private data",
