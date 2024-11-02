@@ -37,14 +37,12 @@ Follow the listed steps and configurations to successfully connect and optimize 
 
 ![Step 4 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/af48d64d-21b2-4607-8571-2ca8e43f85b3/5d054640-2bfc-42c4-83ed-92ab5c19c8e0.png?crop=focalpoint&fit=crop&fp-x=0.5753&fp-y=0.2080&fp-z=1.8855&w=1200&mark-x=603&mark-y=279&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01MjEmaD02OCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
   </Step>
-</Steps>
-
-#### **Select Bot to deploy**
-
-Once connected, you'll be automatically prompted to configure your Zendesk email ticket responses. Ensure to fill in all necessary fields as indicated.
+<Step title="Select Bot to deploy">
+     Select the bot you want to deploy on your Zendesk
 
 ![Step 5 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/995f98f2-59fd-4633-9d94-1fc72c1e48fa/4752df93-6e3d-40d4-8f1a-f34ae6acfe4d.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=622&mark-y=422&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MjUmaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
+  </Step>
+</Steps>
 
 ## Replies Setting
 
@@ -52,30 +50,24 @@ Once connected, you'll be automatically prompted to configure your Zendesk email
 
 Configure how Fini will handle replies:
 
-#### **Select Time Delay**
-    - To make Fini's response time feel more human-like, you can set a delay in seconds. For instance, a 1-hour delay would be set as `3600` seconds.
-
-
+<Steps>
+  <Step title="Select Time Delay">
+     - To make Fini's response time feel more human-like, you can set a delay in seconds. For instance, a 1-hour delay would be set as `3600` seconds.
     ![Step 7 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/6fcae6c3-5e4a-4d15-952c-ec8416014de5/a75af629-4e49-45a7-bacb-c498d80ed07c.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=604&mark-y=142&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MTgmaD02MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-#### **Set a Debounce Lag**
-    - This feature is useful for chat scenarios where the user sends information in multiple messages. Debounce lag allows the bot to wait for a specified number of seconds before responding. During this time, Fini assesses all incoming messages to generate a more relevant response based on complete understanding of the user issue.
-
-
+  </Step>
+<Step title="Set a Debounce Lag">
+     - This feature is useful for chat scenarios where the user sends information in multiple messages. Debounce lag allows the bot to wait for a specified number of seconds before responding. During this time, Fini assesses all incoming messages to generate a more relevant response based on complete understanding of the user issue.
     ![Step 8 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/b3bb06eb-8126-4122-9581-6275b26aea92/06167582-9361-4a23-bece-882b0a930e96.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=599&mark-y=241&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MjMmaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-#### **Choose a Reply Type**
-
-Fini supports two types of replies:
+  </Step>
+<Step title="Choose a Reply Type">
+    Fini supports two types of replies:
 - **Direct Replies**: Direct responses to customers.
 - **Internal Comments**: Internal notes visible only to your support agents.
 
 ![Step 9 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/88da13fd-9f75-47c9-accf-058784b12b67/54169a23-9d1e-404c-8fc5-53fbcec0593f.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=594&mark-y=307&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzMmaD02NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-#### **Reply Type if Agent Assigned**
-
-Configure how Fini behaves when a support agent is assigned to a ticket:
+  </Step>
+<Step title="Reply Type if Agent Assigned">
+    Configure how Fini behaves when a support agent is assigned to a ticket:
 - **Reply to End User**: Fini continues engaging with the customer even after agent assignment.
 - **Post Internal Comment**: Fini stops communicating directly with the customer and instead posts updates as internal comments for the support team.
 - **No Reply**: Fini stops all activity on the ticket, allowing the agent to handle it entirely.
@@ -83,9 +75,9 @@ Configure how Fini behaves when a support agent is assigned to a ticket:
 
 ![Step 10 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/4f37a457-3323-430b-bdd0-8f8f07574071/ed9ae070-1d88-4451-a8de-da152dceccff.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=599&mark-y=401&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzAmaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
-#### **PII Masking**
-
-To protect **Personally Identifiable Information (PII)**, enable PII masking. When enabled, Fini will avoid using personal data (like the user's name, email etc.) in responses, providing a generalized interaction.
+  </Step>
+<Step title="PII Masking">
+    To protect **Personally Identifiable Information (PII)**, enable PII masking. When enabled, Fini will avoid using personal data (like the user's name, email etc.) in responses, providing a generalized interaction.
 
 **Example**:  
 With PII masking:  
@@ -95,14 +87,15 @@ Without PII masking:
 *"Hello, John, how can I assist you today?"*
 
 ![Step 11 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/98683340-39a7-4db0-9777-837e4b39cf4c/a736f252-9411-49b3-bbe3-7734ffdda014.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=601&mark-y=502&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzAmaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-#### **Assign Tickets to Fini**
-
-Automate ticket management by assigning tickets to Fini. This enables further automation (e.g., auto-solving tickets) and analytics within Zendesk.
+  </Step>
+<Step title="Assign Tickets to Fini">
+    Automate ticket management by assigning tickets to Fini. This enables further automation (e.g., auto-solving tickets) and analytics within Zendesk.
 
 > **Note**: If you already have specific assignment rules in place, you may keep this option set to **No**.
 
 ![Step 12 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/194e6dff-2304-46bd-9300-cf144d95d2a7/062e6751-ce05-4da0-804a-9e07c16e42b6.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=594&mark-y=602&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzMmaD02NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  </Step>
+</Steps>
 
 
 ##  **Escalation Setting**
@@ -111,7 +104,8 @@ These settings determine how Fini behaves when an issue is escalated to a human 
 
 ![Step 13 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/f393cbbc-3e4a-403e-83bf-ebfc0902bb75/ff5180ea-4416-4b19-bbbe-a1e72654a92e.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200)
 
-####  **Action if Escalated**
+<Steps>
+  <Step title="Action if Escalated">
     Define what happens if Fini encounters a question it cannot answer (e.g., sensitive topics):
     - **Continue Responding**: Fini will continue to engage even after escalation.
     - **No Reply**: Fini stops replying after escalation.
@@ -122,22 +116,22 @@ These settings determine how Fini behaves when an issue is escalated to a human 
 
 
     ![Step 14 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/d06aa9bd-8cf9-4fbc-801f-82b365191a98/710b1c6f-4ec8-4dc1-ab7f-bb4e4b1d70f4.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=596&mark-y=142&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzMmaD02NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-#### **Acknowledgment Message**
-    - Customize the message users receive when their query is escalated. 
+  </Step>
+<Step title="Acknowledgment Message">
+     - Customize the message users receive when their query is escalated. 
 
     **Suggested Message**:  
     > "Thank you for the additional information. This will be included in the ticket for our specialized human agent team."
 
     ![Step 15 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/11863ddc-8ce9-45bb-acaa-13c68cf6e356/518dcc5d-4223-46ea-9ec1-0d188f74ee92.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=593&mark-y=232&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzcmaD05MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-#### **Threshold Count for Escalation**
-    - Set a **threshold** for the maximum number of replies before escalation. If Fini cannot resolve an issue within a set number of replies (e.g., 5 or 10), the ticket is escalated to a human agent.
+  </Step>
+<Step title="Threshold Count for Escalation">
+     - Set a **threshold** for the maximum number of replies before escalation. If Fini cannot resolve an issue within a set number of replies (e.g., 5 or 10), the ticket is escalated to a human agent.
 
 
     ![Step 16 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/c803c47e-4662-465c-9dfd-1ac3ebe981f4/f86afca2-3777-42de-97a3-e8a9e4bb81ca.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=600&mark-y=388&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MjYmaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-#### **Message When Escalated via Threshold**
+  </Step>
+<Step title="Message When Escalated via Threshold">
     - Customize the message users receive when the bot reaches the escalation threshold. 
 
     **Suggested Message When Threshold is Reached**:  
@@ -145,6 +139,17 @@ These settings determine how Fini behaves when an issue is escalated to a human 
 
 
     ![Step 17 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/1a895d88-ba75-4ed6-b2a8-ba69a6ac5234/abea7e2a-962a-40ea-bf81-a86d30eb59ca.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=593&mark-y=455&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MTImaD0xNjYmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+<Step title="Click">
+    xx
+  </Step>
+<Step title="Click">
+    xx
+  </Step>
+<Step title="Click">
+    xx
+  </Step>
+</Steps>
 
 
 ## **Zendesk Authorization**
@@ -161,34 +166,32 @@ Complete the **authorization process** by clicking **Authorize** and signing in 
 
 Once authorization is complete, a new **Categorization** section will appear.
 
-#### **Enable Categorization**  
-Toggle the **Categorization** setting to allow Fini to automatically categorize tickets based on their content using AI.
+
+<Steps>
+  <Step title="Enable Categorization">
+    Toggle the **Categorization** setting to allow Fini to automatically categorize tickets based on their content using AI.
 
 ![Step 22 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/ddafc4ac-bf24-4338-8a1f-63485e72170e/e7629876-abad-46af-a315-b7a53d8f94b0.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=1043&mark-y=145&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz03MSZoPTQxJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
-
-
-#### **Select a Categorization Field** 
-
-Select the Zendesk field that you want to use for categorization. This needs to be a Multi-select field.
+  </Step>
+<Step title="Select a Categorization Field">
+    Select the Zendesk field that you want to use for categorization. This needs to be a Multi-select field.
 
 ![Step 23 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/165539f0-4a3e-4454-97d7-334a170d2921/781aa052-e2d3-4ced-a374-93c669f58b68.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=588&mark-y=230&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01MzImaD02NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-#### **Category Add Type**
+  </Step>
+<Step title="Category Add Type">
     Decide whether new categories should append to each reply or overwrite the previous ones.
 
     - **Append Categories**: Add new categories with each reply.
     - **Overwrite Categories**: Overwrite categories from the previous reply.
 
     ![Step 24 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/bc877477-c890-4684-b99c-3f96e297fae0/07468105-faad-405f-bfa5-52b0b7d1087d.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=599&mark-y=346&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01NDEmaD02NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-#### **Category Limit**
+  </Step>
+<Step title="Category Limit">
     - Set the maximum number of categories per reply.
 
     ![Step 25 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/3a7ec76e-bc65-4198-bddc-8ea2e9393cc0/9c7dcc57-ca49-4c63-ae30-9c1ff10e38fc.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=599&mark-y=441&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01NDEmaD02NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-#### **Save the changes**
-
-![Step 26 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/58749a1b-73eb-4ce6-b134-b71ecad5ea3c/06ab3ee3-cd3b-48db-a478-ce96c940b857.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=525&mark-y=543&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz0xMjkmaD02MCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  </Step>
+</Steps>
 
 
 ### **Configuration Complete**
