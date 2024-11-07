@@ -16,6 +16,11 @@
         "method": "bearer"
       }
   },
+  "analytics": {
+    "koala": {
+      "publicApiKey": "pk_b8c35e1626a2de2b0e3fb3da85620ea03e7f"
+    }
+  }
   "topbarLinks": [
     {
       "name": "Documentation",
