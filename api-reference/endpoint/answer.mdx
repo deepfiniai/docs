@@ -59,10 +59,6 @@ A list of functions the model may generate JSON inputs for.
 Controls how the model responds to function calls. "none" means the model does not call a function, and responds to the end-user. "auto" means the model can pick between an end-user or calling a function. Specifying a particular function via `{"name":\ "my_function"}` forces the model to call that function. "none" is the default when no functions are present. "auto" is the default if functions are present.
 </ParamField>
 
-<ParamField body="user_attributes" type="object">
-The user_attributes object contains key-value pairs representing user specific information and attributes within the system. Each attribute is defined by a key-value pair where the key is a string and the value can be a string, boolean, or numeric type. These attributes capture user details, enabling personalized responses and workflow handling.
-</ParamField>
-
 <ParamField body="stream" type="boolean" default="false">
   Whether to stream back partial progress.
 </ParamField>
