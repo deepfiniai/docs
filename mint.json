@@ -102,7 +102,7 @@
       "pages": ["api-reference/authentication"]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Endpoint Example",
       "pages": [
         "api-reference/endpoint/answer",
         "api-reference/endpoint/feedback",
