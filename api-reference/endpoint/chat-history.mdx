@@ -92,10 +92,6 @@ description: "This endpoint allows you to fetch chat history"
       Indicates if the system is expecting a follow-up from the user
     </ResponseField>
     
-    <ResponseField body="userId" type="string">
-      ID of the user who initiated the conversation
-    </ResponseField>
-    
     <ResponseField body="url" type="string">
       URL associated with the conversation (if any)
     </ResponseField>
@@ -235,7 +231,6 @@ axios.get(url, { params, headers })
             "hasLinks": true,
             "feedbackType": null,
             "expectingUserFollowup": false,
-            "userId": "4f7bce7e-f105-4b3f-8977-94e29e2b2886",
             "url": null,
             "categories": [
                 "fini-other"
