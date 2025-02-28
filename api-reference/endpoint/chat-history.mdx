@@ -6,145 +6,261 @@ description: "This endpoint allows you to fetch chat history"
 
 ### Query
 
-<ParamField query="source" type="array" default="none" required>
-  Allows you to fetch chat history for a particular source, or all sources. 
+<ParamField query="source" type="string" default="none" required>
+  Allows you to fetch chat history for a particular source, or all sources.
   Valid values are "all","zendesk","slack","discord","widget","intercom","ui","api"
 </ParamField>
 
-<ParamField query="startEpoch" type="number" default="none" required>
+<ParamField query="startEpoch" type="number" default="none" optional>
   Epoch timestamp in milliseconds for the start date of history
 </ParamField>
 
-<ParamField query="endEpoch" type="number" default="none" required>
+<ParamField query="endEpoch" type="number" default="none" optional>
   Epoch timestamp in milliseconds for the end date of history
+</ParamField>
+
+<ParamField query="limit" type="number" default="50" optional>
+  The number of records to fetch per request
+</ParamField>
+
+<ParamField query="direction" type="string" default="none" optional>
+  Direction for pagination (e.g., "next" or "previous")
+</ParamField>
+
+<ParamField query="cursor" type="string" default="none" optional>
+  Cursor for pagination
+</ParamField>
+
+<ParamField query="category" type="string" default="none" optional>
+  Filter by category
+</ParamField>
+
+<ParamField query="feedbackType" type="string" default="none" optional>
+  Feedback type filter (e.g., "thumbs_up", "thumbs_down", "no_feedback")
+</ParamField>
+
+<ParamField query="escalation" type="boolean" default="false" optional>
+  Filter conversations based on escalation status
+</ParamField>
+
+<ParamField query="hasLinks" type="boolean" default="false" optional>
+  Filter conversations that contain knowledge
+</ParamField>
+
+<ParamField query="ticketId" type="string" default="none" optional>
+  Filter by ticket ID (this is from your ticketing system)
+</ParamField>
+
+<ParamField query="question" type="string" default="none" optional>
+  Filter by question text
 </ParamField>
 
 ### Response
 
-<ResponseField name="botName" type="string">
-  Name of your bot in Fini Dashboard
-</ResponseField>
-
-<ResponseField name="createdAt" type="number">
-  Epoch timestamp corresponding to the exact time when the question was asked
-</ResponseField>
-
-<ResponseField name="source" type="string">
-  Source used to ask the question
-</ResponseField>
-
-<ResponseField name="question" type="string">
-  Question asked on Fini
-</ResponseField>
-
-<ResponseField name="answer" type="string">
-  Answer received from Fini
-</ResponseField>
-
-<ResponseField name="categories" type="string">
-  Categories assigned by Fini
-</ResponseField>
-
-<ResponseField name="basedOn" type="array">
-  This field gives detailed info on the knowledgebase used to formulate the answer
-</ResponseField>
-
-<ResponseField name="messageHistory" type="array">
-A list of messages comprising the conversation so far.
-
+<ResponseField name="conversations" type="array">
+  A list of conversations containing chat history.
   <Expandable title="Toggle object">
-
-    <ResponseField body="role" type="string">
-      The role of the messages author. One of `system`, `user`, `assistant`, or `function`.
+    <ResponseField body="id" type="string">
+      Unique ID for the conversation
     </ResponseField>
     
-    <ResponseField body="content" type="string">
-     The contents of the message. `content` is required for all messages except assistant messages with function calls.
+    <ResponseField body="externalId" type="string">
+      External ID associated with the conversation (from your ticketing system)
     </ResponseField>
-
+    
+    <ResponseField body="source" type="string">
+      Source used to ask the question
+    </ResponseField>
+    
+    <ResponseField body="channel" type="string">
+      Channel through which the conversation occurred
+    </ResponseField>
+    
+    <ResponseField body="escalation" type="boolean">
+      Indicates if the conversation was escalated
+    </ResponseField>
+    
+    <ResponseField body="hasLinks" type="boolean">
+      Indicates if the conversation contains links
+    </ResponseField>
+    
+    <ResponseField body="feedbackType" type="string">
+      Feedback type associated with the conversation
+    </ResponseField>
+    
+    <ResponseField body="expectingUserFollowup" type="boolean">
+      Indicates if the system is expecting a follow-up from the user
+    </ResponseField>
+    
+    <ResponseField body="userId" type="string">
+      ID of the user who initiated the conversation
+    </ResponseField>
+    
+    <ResponseField body="url" type="string">
+      URL associated with the conversation (if any)
+    </ResponseField>
+    
+    <ResponseField body="categories" type="array">
+      Categories assigned to the conversation
+    </ResponseField>
+    
+    <ResponseField body="createdAt" type="number">
+      Epoch timestamp of when the conversation was created
+    </ResponseField>
+    
+    <ResponseField body="updatedAt" type="number">
+      Epoch timestamp of when the conversation was last updated
+    </ResponseField>
+    
+    <ResponseField body="botRequests" type="array">
+      A list of bot interactions within the conversation.
+      <Expandable title="Toggle object">
+        <ResponseField body="question" type="string">
+          Question asked in the conversation
+        </ResponseField>
+        <ResponseField body="answer" type="string">
+          Answer provided by Fini
+        </ResponseField>
+        <ResponseField body="categories" type="array">
+          Categories assigned to the response
+        </ResponseField>
+        <ResponseField body="escalation" type="boolean">
+          Indicates if the bot's response led to escalation
+        </ResponseField>
+        <ResponseField body="reasoning" type="string">
+          Reasoning behind the bot's response (if any)
+        </ResponseField>
+        <ResponseField body="feedbackType" type="string">
+          Feedback type given on the bot's response
+        </ResponseField>
+        <ResponseField body="expectingUserFollowup" type="boolean">
+          Indicates if the bot expects a follow-up from the user
+        </ResponseField>
+        <ResponseField body="createdAt" type="number">
+          Epoch timestamp when the response was generated
+        </ResponseField>
+        <ResponseField body="basedOn" type="array">
+          Knowledge sources used for generating the response
+        </ResponseField>
+      </Expandable>
+    </ResponseField>
   </Expandable>
-
 </ResponseField>
 
+<ResponseField name="hasMore" type="boolean">
+  Indicates if there are more conversations to fetch
+</ResponseField>
 
 <RequestExample>
 
 ```python Example Request- Python
 import requests
+
 url = "https://api-prod.usefini.com/v2/bots/requests/public"
-token = "your_api_key_here"  # Best stored in secrets management
-headers = {"Authorization": "Bearer " + token}
+token = "your_api_key"  # Replace with your actual API key
+headers = {"Authorization": f"Bearer {token}"}
 
 params = {
-    'source': ['zendesk', 'api'],  # Replace with desired source
-    'startEpoch': 1633046400000,  # Replace with desired start epoch timestamp in milliseconds
-    'endEpoch': 1635638400000  # Replace with desired end epoch timestamp in milliseconds
+    "startEpoch": 1633046400000,  # Optional
+    "endEpoch": 1635638400000,  # Optional
+    "limit": 50,  # Optional
+    "direction": "",  # Optional (e.g., 'next' or 'previous')
+    "cursor": "your_cursor_value",  # Optional
+    "source": "zendesk",  # Optional
+    "category": "support",  # Optional
+    "feedbackType": "",  # Optional ('thumbs_up', 'thumbs_down', 'no_feedback')
+    "escalation": True,  # Optional
+    "hasLinks": False,  # Optional
+    "userId": "",  # Optional
+    "ticketId": "ticket456",  # Optional
+    "question": "Example question?"  # Optional
 }
 
-# Make the GET request
 response = requests.get(url, params=params, headers=headers)
 
-# Check if the request was successful and print the response
 if response.status_code == 200:
     print(response.json())
 else:
     print(f"Failed to fetch data: {response.status_code}")
 ```
+
+
+
 ```javascript Example Request- Node.js
 const axios = require('axios'); // Make sure to install axios: npm install axios
 
 const url = 'https://api-prod.usefini.com/v2/bots/requests/public';
-const token = 'your_api_key' // Replace with your actual API key
+const token = 'your_api_key'; // Replace with your actual API key
+
 const headers = {
-        'Authorization': `Bearer ${token}`
-};
-const params = {
-        source: ['zendesk', 'api'],  // Replace with desired source
-        startEpoch: 1633046400000,  // Replace with desired start epoch timestamp in milliseconds
-        endEpoch: 1635638400000  // Replace with desired end epoch timestamp in milliseconds
+    'Authorization': `Bearer ${token}`,
 };
 
-// Make the GET request
+const params = {
+    startEpoch: 1633046400000, // Optional
+    endEpoch: 1635638400000, // Optional
+    limit: 50, // Optional
+    direction: '', // Optional (e.g., 'next' or 'previous')
+    cursor: 'your_cursor_value', // Optional
+    source: 'zendesk', // Optional
+    category: 'support', // Optional
+    feedbackType: '', // Optional ('thumbs_up', 'thumbs_down', 'no_feedback')
+    escalation: true, // Optional
+    hasLinks: false, // Optional
+    userId: '', // Optional
+    ticketId: 'ticket456', // Optional
+    question: 'Example question?' // Optional
+};
+
 axios.get(url, { params, headers })
-        .then(response => {
-                console.log(response.data);
-        })
-        .catch(error => {
-                console.log(error)
-                console.error(`Error: ${error.message}`);
-        });
+    .then(response => {
+        console.log(response.data);
+    })
+    .catch(error => {
+        console.error(`Error: ${error.message}`);
+    });
 ```
 </RequestExample>
 
 <ResponseExample>
 ```json Response
-[
-  {
-    "botName": "Fini",
-    "createdAt": 1704725925544,
-    "source": "zendesk",
-    "question": "What is Fini?",
-    "answer": "Fini is your 24*7 agent resolving customer support queries in real-time -helping you save costs, and keep your customer happy. Fini securely integrates with your private data, and gives you an AI agent, ready 24/7 to solve customer queries on Zendesk, Slack, Discord and more",
-    "basedOn": [
-      {
-        "id": "c898051d33d3d26f81da6610e9a38377",
-        "entry": "2023-10-30 13:53:41.513721",
-        "score": 0.2764168887003209,
-        "title": "56760f7a-3254-421e-9b7a-7ebaca9e7534.md",
-        "answer": "Fini is your 24*7 agent resolving customer support queries in real-time -helping you save costs, and keep your customer happy. Fini securely integrates with your private data, and gives you an AI agent, ready 24/7 to solve customer queries on Zendesk, Slack, Discord and more",
-        "question": "What is Fini?",
-        "source_id": "https://usefini.com",
-        "source_type": "url"
-      }
+{
+    "conversations": [
+        {
+            "id": "a35607bc-8008-44fd-9991-1d7c2c5c3f22",
+            "externalId": null,
+            "source": "widget",
+            "channel": null,
+            "escalation": false,
+            "hasLinks": true,
+            "feedbackType": null,
+            "expectingUserFollowup": false,
+            "userId": "4f7bce7e-f105-4b3f-8977-94e29e2b2886",
+            "url": null,
+            "categories": [
+                "fini-other"
+            ],
+            "createdAt": 1740407169191,
+            "updatedAt": 1740407178879,
+            "botRequests": [
+                {
+                    "question": "Hello",
+                    "answer": "Hello, how can I help you?",
+                    "categories": [
+                        "fini-other"
+                    ],
+                    "escalation": false,
+                    "reasoning": null,
+                    "feedbackType": null,
+                    "expectingUserFollowup": false,
+                    "createdAt": 1740407178963,
+                    "basedOn": []
+                },
+            ]
+        },
     ],
-    "messageHistory": [
-      {
-        "role": "system",
-        "content": "Instruction - You are Clippy, a helpful agent and you are answering questions for customers and internal employees. Be casual, and excited to help your users. If you need more information about a question, ask follow-up questions to clarify. Let’s work this out in a step-by-step way to be sure we have the correct answer. Answer as concisely as possible. It’s very important to note that you are only allowed to give answers from the information given to you. If you can’t find the answer, say \\\"Let me have someone on the team look into this, and we will get back to you ASAP\\\". Never break character.. Answer based both on the general knowledge and the provided content"
-      }
-    ]
-  }
-]
+    "hasMore": false
+}
 ```
 </ResponseExample>
 
