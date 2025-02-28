@@ -60,82 +60,82 @@ description: "This endpoint allows you to fetch chat history"
 <ResponseField name="conversations" type="array">
   A list of conversations containing chat history.
   <Expandable title="Toggle object">
-    <ResponseField body="id" type="string">
+    <ResponseField name="id" type="string">
       Unique ID for the conversation
     </ResponseField>
     
-    <ResponseField body="externalId" type="string">
+    <ResponseField name="externalId" type="string">
       External ID associated with the conversation (from your ticketing system)
     </ResponseField>
     
-    <ResponseField body="source" type="string">
+    <ResponseField name="source" type="string">
       Source used to ask the question
     </ResponseField>
     
-    <ResponseField body="channel" type="string">
+    <ResponseField name="channel" type="string">
       Channel through which the conversation occurred
     </ResponseField>
     
-    <ResponseField body="escalation" type="boolean">
+    <ResponseField name="escalation" type="boolean">
       Indicates if the conversation was escalated
     </ResponseField>
     
-    <ResponseField body="hasLinks" type="boolean">
+    <ResponseField name="hasLinks" type="boolean">
       Indicates if the conversation contains links
     </ResponseField>
     
-    <ResponseField body="feedbackType" type="string">
+    <ResponseField name="feedbackType" type="string">
       Feedback type associated with the conversation
     </ResponseField>
     
-    <ResponseField body="expectingUserFollowup" type="boolean">
+    <ResponseField name="expectingUserFollowup" type="boolean">
       Indicates if the system is expecting a follow-up from the user
     </ResponseField>
     
-    <ResponseField body="url" type="string">
+    <ResponseField name="url" type="string">
       URL associated with the conversation (if any)
     </ResponseField>
     
-    <ResponseField body="categories" type="array">
+    <ResponseField name="categories" type="array">
       Categories assigned to the conversation
     </ResponseField>
     
-    <ResponseField body="createdAt" type="number">
+    <ResponseField name="createdAt" type="number">
       Epoch timestamp of when the conversation was created
     </ResponseField>
     
-    <ResponseField body="updatedAt" type="number">
+    <ResponseField name="updatedAt" type="number">
       Epoch timestamp of when the conversation was last updated
     </ResponseField>
     
-    <ResponseField body="botRequests" type="array">
+    <ResponseField name="botRequests" type="array">
       A list of bot interactions within the conversation.
       <Expandable title="Toggle object">
-        <ResponseField body="question" type="string">
+        <ResponseField name="question" type="string">
           Question asked in the conversation
         </ResponseField>
-        <ResponseField body="answer" type="string">
+        <ResponseField name="answer" type="string">
           Answer provided by Fini
         </ResponseField>
-        <ResponseField body="categories" type="array">
+        <ResponseField name="categories" type="array">
           Categories assigned to the response
         </ResponseField>
-        <ResponseField body="escalation" type="boolean">
+        <ResponseField name="escalation" type="boolean">
           Indicates if the bot's response led to escalation
         </ResponseField>
-        <ResponseField body="reasoning" type="string">
+        <ResponseField name="reasoning" type="string">
           Reasoning behind the bot's response (if any)
         </ResponseField>
-        <ResponseField body="feedbackType" type="string">
+        <ResponseField name="feedbackType" type="string">
           Feedback type given on the bot's response
         </ResponseField>
-        <ResponseField body="expectingUserFollowup" type="boolean">
+        <ResponseField name="expectingUserFollowup" type="boolean">
           Indicates if the bot expects a follow-up from the user
         </ResponseField>
-        <ResponseField body="createdAt" type="number">
+        <ResponseField name="createdAt" type="number">
           Epoch timestamp when the response was generated
         </ResponseField>
-        <ResponseField body="basedOn" type="array">
+        <ResponseField name="basedOn" type="array">
           Knowledge sources used for generating the response
         </ResponseField>
       </Expandable>
