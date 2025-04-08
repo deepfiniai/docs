@@ -110,7 +110,8 @@
         "api-reference/endpoint/add-links",
         "api-reference/endpoint/refresh-links",
         "api-reference/endpoint/delete-links",
-        "api-reference/endpoint/list-knowledge-items"
+        "api-reference/endpoint/list-knowledge-items",
+        "api-reference/endpoint/create-knowledge-item"
       ]
     }
   ],
