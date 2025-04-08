@@ -1,0 +1,177 @@
+---
+title: "Create Knowledge Item"
+api: "POST https://api-prod.usefini.com/v2/knowledge-items/public"
+description: "This endpoint creates a new knowledge item in your Fini workspace."
+---
+
+### Headers
+
+<ParamField body="Authorization" type="string" required>
+  API key for authentication. Format: Bearer your_api_key_here.
+</ParamField>
+
+### Body Parameters
+
+<ParamField body="botIds" type="array[string]" required>
+  List of bot IDs that this knowledge item should be associated with.
+</ParamField>
+
+<ParamField body="status" type="string" required>
+  Status of the item. Valid values: LIVE, IN_REVIEW, DRAFT.
+</ParamField>
+
+<ParamField body="question" type="string" required>
+  The main question this knowledge item addresses.
+</ParamField>
+
+<ParamField body="answer" type="string" required>
+  The answer to the question.
+</ParamField>
+
+<ParamField body="instruction" type="string" required>
+  Instruction associated with the item, used for bot training or human review.
+</ParamField>
+
+<ParamField body="similarQs" type="array[string]" required>
+  List of similar questions to the main question.
+</ParamField>
+
+<ParamField body="keywords" type="array[string]" required>
+  List of keywords to help with search and categorization.
+</ParamField>
+
+<ParamField body="categories" type="array[string]" required>
+  Categories under which the item is grouped.
+</ParamField>
+
+<ParamField body="subcategories" type="array[string]" required>
+  Subcategories under which the item is grouped.
+</ParamField>
+
+<ParamField body="escalation" type="boolean" required>
+  Whether this item is marked for escalation.
+</ParamField>
+
+### Response
+
+<ResponseField name="id" type="string">
+  Unique ID of the created knowledge item.
+</ResponseField>
+
+<ResponseField name="companyId" type="string">
+  ID of the company that owns the knowledge item.
+</ResponseField>
+
+<ResponseField name="userId" type="string">
+  ID of the user who created the knowledge item.
+</ResponseField>
+
+<ResponseField name="createdAt" type="string">
+  Timestamp of when the item was created.
+</ResponseField>
+
+<ResponseField name="updatedAt" type="string">
+  Timestamp of the last update to the item.
+</ResponseField>
+
+<ResponseField name="knowledgeNumber" type="integer">
+  Auto-generated knowledge number.
+</ResponseField>
+
+<ResponseField name="status" type="string">
+  Status of the item: LIVE, IN_REVIEW, or DRAFT.
+</ResponseField>
+
+<ResponseField name="answer" type="string">
+  The answer text.
+</ResponseField>
+
+<ResponseField name="question" type="string">
+  The question text.
+</ResponseField>
+
+<ResponseField name="similarQs" type="array[string]">
+  List of similar questions.
+</ResponseField>
+
+<ResponseField name="keywords" type="array[string]">
+  Keywords associated with the knowledge item.
+</ResponseField>
+
+<ResponseField name="categories" type="array[string]">
+  Categories under which the item is grouped.
+</ResponseField>
+
+<ResponseField name="subcategories" type="array[string]">
+  Subcategories under which the item is grouped.
+</ResponseField>
+
+<ResponseField name="escalation" type="boolean">
+  Whether the item is marked for escalation.
+</ResponseField>
+
+<ResponseField name="updatedBy" type="string">
+  ID of the user who last updated the item.
+</ResponseField>
+
+<ResponseField name="instruction" type="string">
+  Instruction associated with the item.
+</ResponseField>
+
+<RequestExample>
+
+javascript Example Request - Node.js
+const axios = require('axios');
+
+const url = 'https://api-prod.usefini.com/v2/knowledge-items/public';
+const token = 'your_api_key_here'; // Replace with your actual API key
+
+const headers = {
+  'authorization': `Bearer ${token}`,
+  'Content-Type': 'application/json'
+};
+
+const data = {
+  botIds: ['1167ae66-8dg3-4765-9f08-fb558232089t'],
+  status: 'LIVE',
+  question: 'check2',
+  answer: 'check',
+  instruction: null,
+  similarQs: ['similar question'],
+  keywords: ['keyword 2'],
+  categories: ['Hello2'],
+  subcategories: ['Hello'],
+  escalation: false
+};
+
+axios.post(url, data, { headers })
+  .then(response => {
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+</RequestExample>
+
+<ResponseExample>
+json Response
+{
+  "id": "ce99afbb-9f3a-4697-81e8-4858f48895e2",
+  "companyId": "ad0d8969-ef32-4cbf-a098-9260baf9c130",
+  "userId": "72fb4eea-207d-43ae-9b4c-274eac4e57d6",
+  "createdAt": "2025-04-08T13:48:22.917514+00:00",
+  "updatedAt": "2025-04-08T13:48:22.917514+00:00",
+  "knowledgeNumber": 240,
+  "status": "LIVE",
+  "answer": "check",
+  "question": "check2",
+  "similarQs": ["similar question"],
+  "keywords": ["keyword 2"],
+  "categories": ["Hello2"],
+  "subcategories": ["Hello"],
+  "escalation": false,
+  "updatedBy": "72fb4eea-207d-43ae-9b4c-274eac4e57d6",
+  "instruction": null
+}
+</ResponseExample>
