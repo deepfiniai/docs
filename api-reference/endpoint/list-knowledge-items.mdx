@@ -1,0 +1,150 @@
+---
+title: "Retrieve Public Knowledge Items"
+api: "GET https://api-prod.usefini.com/v2/knowledge-items/public"
+description: "This endpoint fetches public knowledge items from your Fini workspace based on filters such as status, keyword, category, or escalation settings."
+---
+
+### Query Parameters
+
+<ParamField body="status" type="string">
+  Filter knowledge items by status. Valid values: `LIVE`, `IN_REVIEW`, `DRAFT`.
+</ParamField>
+
+<ParamField body="question" type="string">
+  Filter items containing this string in the question.
+</ParamField>
+
+<ParamField body="answer" type="string">
+  Filter items containing this string in the answer.
+</ParamField>
+
+<ParamField body="keyword" type="string">
+  Filter items that include the specified keyword.
+</ParamField>
+
+<ParamField body="category" type="string">
+  Filter items under a specific category.
+</ParamField>
+
+<ParamField body="subcategory" type="string">
+  Filter items under a specific subcategory.
+</ParamField>
+
+<ParamField body="escalation" type="boolean">
+  Filter items marked for escalation (e.g. require human review).
+</ParamField>
+
+<ParamField body="instruction" type="string">
+  Filter items by the associated instruction content.
+</ParamField>
+
+### Headers
+
+<ParamField body="Authorization" type="string" required>
+  API key for authentication. Format: `Bearer your_api_key_here`.
+</ParamField>
+
+### Response
+
+<ResponseField name="success" type="boolean">
+  Indicates if the API call was successful.
+</ResponseField>
+
+<ResponseField name="data" type="array">
+  List of matching knowledge items.
+  
+  <Expandable title="Toggle object">
+    
+    <ResponseField name="question" type="string">
+      The question text of the knowledge item.
+    </ResponseField>
+
+    <ResponseField name="answer" type="string">
+      The answer associated with the question.
+    </ResponseField>
+
+    <ResponseField name="status" type="string">
+      Status of the item: `LIVE`, `IN_REVIEW`, or `DRAFT`.
+    </ResponseField>
+
+    <ResponseField name="category" type="string">
+      Category under which the item is grouped.
+    </ResponseField>
+
+    <ResponseField name="subcategory" type="string">
+      Subcategory under which the item is grouped.
+    </ResponseField>
+
+    <ResponseField name="escalation" type="boolean">
+      Whether the item is marked for escalation.
+    </ResponseField>
+
+    <ResponseField name="instruction" type="string">
+      Instruction associated with the item.
+    </ResponseField>
+
+  </Expandable>
+</ResponseField>
+
+<RequestExample>
+
+```javascript Example Request- Node.js
+const axios = require('axios');
+
+const url = 'https://api-prod.usefini.com/v2/knowledge-items/public';
+const token = 'your_api_key_here'; // Replace with your actual API key
+
+const headers = {
+    'authorization': `Bearer ${token}`
+};
+
+const params = {
+    status: 'LIVE', // or IN_REVIEW, DRAFT
+    question: 'upgrade',
+    answer: 'premium plan',
+    keyword: 'subscription',
+    category: 'Pricing',
+    subcategory: 'Plans',
+    escalation: false,
+    instruction: 'Answer questions related to pricing clearly.'
+};
+
+axios.get(url, { headers, params })
+    .then(response => {
+        console.log(response.data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+```
+</RequestExample>
+
+<ResponseExample>
+```json Response
+{
+    "knowledgeItems": [
+        {
+            "id": "2861f1b4-e0f9-44a2-a6bb-3ea7b824d690",
+            "companyId": "ad0d8969-ef32-4cbf-a098-9260baf9c130",
+            "userId": "72fb4eea-207d-43ae-9b4c-274eac4e57d6",
+            "createdAt": "2025-04-02T12:43:15.875146+00:00",
+            "updatedAt": "2025-04-07T22:23:13.114502+00:00",
+            "knowledgeNumber": 239,
+            "status": "DRAFT",
+            "answer": "I've reviewed the check you wrote in about, and I see the recipient already deposited the check on [INSERT CHECK DEPOSITED DATE], so we are unable to cancel the check.",
+            "question": "Banking::Checks::Outbound::Cancel Check - Already Deposited",
+            "similarQs": [],
+            "keywords": [],
+            "categories": [],
+            "subcategories": [],
+            "escalation": false,
+            "updatedBy": "72fb4eea-207d-43ae-9b4c-274eac4e57d6",
+            "instruction": null,
+            "botIds": {
+                "1167ae66-8da3-4765-9f08-fb558232059e": "OFFLINE"
+            }
+        }
+      ]
+  }
+``` 
+</ResponseExample>
