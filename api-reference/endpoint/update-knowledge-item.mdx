@@ -129,7 +129,7 @@ description: "This endpoint updates an existing knowledge item in your Fini work
 ```javascript Example Request - Node.js
 const axios = require('axios');
 
-const itemId = 'ce99afbb-9f3a-4697-81e8-4858f48895e2'; // Replace with your item ID
+const itemId = 'a7f9c3e2-4d8b-4c6a-9d2b-1b0f2e9d4d67'; // Replace with your item ID
 const url = `https://api-prod.usefini.com/v2/knowledge-items/${itemId}/public`;
 const token = 'your_api_key_here'; // Replace with your actual API key
 
@@ -139,7 +139,7 @@ const headers = {
 };
 
 const data = {
-  botIds: ['1124e46-8dg3-5825-9a88-fb558210456t'],
+  botIds: ['e93ab1f2-7c4e-4a21-a1d6-2b7c5c9d3e10'],
   status: 'LIVE',
   question: 'Updated question',
   answer: 'Updated answer',
@@ -164,9 +164,9 @@ axios.put(url, data, { headers })
 <ResponseExample>
 ```json Response
 {
-  "id": "ce99afbb-9f3a-4697-81e8-4858f48895e2",
-  "companyId": "ad0d8969-ef32-4cbf-a098-9260baf9c130",
-  "userId": "72fb4eea-207d-43ae-9b4c-274eac4e57d6",
+ "id": "a7f9c3e2-4d8b-4c6a-9d2b-1b0f2e9d4d67",
+  "companyId": "f3a6d980-123e-49b2-bf2d-9b11a5d3cd24",
+  "userId": "5e2c7f1d-0b42-4e3e-82b4-3a76b1cb25f1",
   "createdAt": "2025-04-08T13:48:22.917514+00:00",
   "updatedAt": "2025-04-17T21:12:10.000000+00:00",
   "knowledgeNumber": 240,
