@@ -86,7 +86,7 @@
           "pages": ["integrations/frontEmail"]
         },
         {
-          "group": "Hubspot",
+          "group": "HubSpot",
           "icon": "hubspot",
           "pages": ["integrations/hubspotEmail","integrations/hubspotChat"]
         },
