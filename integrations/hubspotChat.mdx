@@ -41,19 +41,19 @@ Configure how Fini will handle replies
 <Steps>
   <Step title="Select Time Delay">
   - To make Fini's response time feel more human-like, you can set a delay in seconds. For instance, 1 hour delay would be set as `3600` seconds. But for Chat we recommend to set it as 0.
-    ![Step 2 screenshot](https://images.tango.us/workflows/6e2d33b0-f769-4917-ad3c-28b34d4c2055/steps/9f19b899-0a24-4c17-89e7-441a6bc60b31/2cb249e2-d65b-4bd8-8d44-e02be0184ed7.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=601&mark-y=129&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MzImaD02MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+     ![Step 3 screenshot](https://images.tango.us/workflows/6094487b-e17a-4cc5-acfa-87525f1539c1/steps/3798f96a-95a3-4106-a3b3-3b4f3be7d95f/15771843-9010-4334-a5b1-e5a80c1d2337.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=610&mark-y=114&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NTcmaD02NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
   </Step>
 <Step title="Set a Debounce Lag">
      - This feature is useful for chat scenarios where the user sends information in multiple messages. Debounce lag allows the bot to wait for a specified number of seconds before responding. During this time, Fini assesses all incoming messages to generate a more relevant response based on complete understanding of the user issue.
-    ![Step 4 screenshot](https://images.tango.us/workflows/6e2d33b0-f769-4917-ad3c-28b34d4c2055/steps/b009f559-1c16-4ddb-94a2-e8728330f988/990c456e-6d27-4da4-b71c-4f0fdeb30fe1.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=604&mark-y=232&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NTUmaD02NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+    ![Step 4 screenshot](https://images.tango.us/workflows/6094487b-e17a-4cc5-acfa-87525f1539c1/steps/67911aca-00ce-4a2a-bd82-0900396974d4/c5fddba7-8660-4fc6-8f8d-7e8e732684f3.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=607&mark-y=226&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NTAmaD02NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw
   </Step>
 <Step title="Choose a Reply Type">
     Fini supports two types of replies:
   - **Direct Replies**: Direct responses to customers.
   - **Internal Comments**: Internal notes visible only to your support agents.
 
-![Step 5 screenshot](https://images.tango.us/workflows/6e2d33b0-f769-4917-ad3c-28b34d4c2055/steps/b3fe845a-3c99-4bb1-8d01-0e336044311f/e5d5b777-989d-4f64-8c48-ec709d823837.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=606&mark-y=317&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NTEmaD02NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+![Step 5 screenshot](https://images.tango.us/workflows/6094487b-e17a-4cc5-acfa-87525f1539c1/steps/8f5eee1c-a62a-49b4-89e5-54dcccac300a/e964eeb7-7983-48ac-b04e-4ba84d3d330c.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=610&mark-y=313&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NTUmaD02NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
   </Step>
 <Step title="Reply Type if Agent Assigned">
     Configure how Fini behaves when a support agent is assigned to a ticket:
@@ -61,7 +61,7 @@ Configure how Fini will handle replies
   - **Post Internal Comment**: Fini stops communicating directly with the customer and instead posts updates as internal comments for the support team.
   - **No Reply**: Fini stops all activity on the ticket, allowing the agent to handle it entirely.
 
-![Step 6 screenshot](https://images.tango.us/workflows/6e2d33b0-f769-4917-ad3c-28b34d4c2055/steps/628918aa-5851-445d-9a85-80b3b61e860e/74c968e5-418f-4589-b3f1-58dda4d7b26c.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=604&mark-y=415&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NTAmaD02NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+![Step 6 screenshot](https://images.tango.us/workflows/6094487b-e17a-4cc5-acfa-87525f1539c1/steps/ea3d204b-2f09-4b26-9c63-f01faba79d60/a454014a-45bc-455c-9321-b21b0fd5aec6.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=606&mark-y=402&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NTUmaD02NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
 
   </Step>
@@ -75,7 +75,7 @@ With PII masking:
 Without PII masking:  
 *"Hello, John, how can I assist you today?"*
 
-![Step 7 screenshot](https://images.tango.us/workflows/6e2d33b0-f769-4917-ad3c-28b34d4c2055/steps/304b9111-c35c-47b1-8cfb-d885b70269bc/ceba87e0-ede5-4f54-918f-cb2a28e14878.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=608&mark-y=516&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NTImaD02NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+![Step 7 screenshot](https://images.tango.us/workflows/6094487b-e17a-4cc5-acfa-87525f1539c1/steps/0f2cac8d-14a5-4d52-bee7-6c1984b20791/6474b042-e967-4e6f-a7ec-50e4be67af9e.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=605&mark-y=504&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NTUmaD02NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
   </Step>
 </Steps>
 
@@ -97,7 +97,7 @@ These settings determine how Fini responds when an issue is escalated to a human
     > "Thank you for the additional information. This will be included in the ticket for our specialized human agent team."
 
 
-    ![Step 2 screenshot](https://images.tango.us/workflows/1e4baf57-fdc4-40b5-99b7-e1984edcb6b8/steps/65b5c3bf-a617-4309-b3fb-1cc943383e4c/ebde1d3b-83f1-4d8d-a325-b61f7de050a6.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=603&mark-y=119&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NDgmaD02NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+    ![Step 9 screenshot](https://images.tango.us/workflows/6094487b-e17a-4cc5-acfa-87525f1539c1/steps/ed8894f1-4e0b-47b0-8f27-0087b3f94422/94122291-ec17-4c07-a2b7-bc7ae6a701bd.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=610&mark-y=123&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NDYmaD02NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
   </Step>
 <Step title="Acknowledgment Message">
      - Customize the message users receive when their query is escalated. 
@@ -105,13 +105,14 @@ These settings determine how Fini responds when an issue is escalated to a human
     **Suggested Message**:  
     > "Thank you for the additional information. This will be included in the ticket for our specialized human agent team."
 
-    ![Step 3 screenshot](https://images.tango.us/workflows/1e4baf57-fdc4-40b5-99b7-e1984edcb6b8/steps/5eea83b3-18e7-4267-91ce-faa0dbba9c3f/87ffa663-46f8-436a-a0ce-f68041f9df36.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=611&mark-y=204&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NTQmaD0xMjcmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+      ![Step 10 screenshot](https://images.tango.us/workflows/6094487b-e17a-4cc5-acfa-87525f1539c1/steps/c1639cc4-41ba-45f7-a4f0-13056e737377/f5ee71e5-e3c6-4fd2-8a32-bc3474536910.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=602&mark-y=205&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NDkmaD0xNDYmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+    
   </Step>
 <Step title="Threshold Count for Escalation">
      - Set a **threshold** for the maximum number of replies before escalation. If Fini cannot resolve an issue within a set number of replies (for chat we recommend to put it as high as 100), the ticket is escalated to a human agent.
 
 
-    ![Step 4 screenshot](https://images.tango.us/workflows/1e4baf57-fdc4-40b5-99b7-e1984edcb6b8/steps/0a1c2b57-653b-47d7-85b3-bf078f1f48bf/09366f3c-4bf1-4566-b015-04786365df48.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=618&mark-y=369&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NzAmaD02NyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+    ![Step 11 screenshot](https://images.tango.us/workflows/6094487b-e17a-4cc5-acfa-87525f1539c1/steps/b4ea9eee-8af9-4eb2-a318-0b926ba65344/ef9eed2a-d5d9-4bd7-b967-677c2858b614.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=599&mark-y=376&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NDgmaD02NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
   </Step>
 <Step title="Message When Escalated via Threshold">
     - Customize the message users receive when the bot reaches the escalation threshold. 
@@ -120,7 +121,7 @@ These settings determine how Fini responds when an issue is escalated to a human
     > "Thank you for your message. Unfortunately, this is outside of my expertise, and I will need to escalate this to our specialized support team. A member of our team will reach out shortly."
 
 
-    ![Step 5 screenshot](https://images.tango.us/workflows/1e4baf57-fdc4-40b5-99b7-e1984edcb6b8/steps/6f9d8ded-24ef-400a-abda-8f925acf5078/3113cefa-bb03-4222-927a-90c5fb932712.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=617&mark-y=452&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NjImaD0xODImZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+    ![Step 2 screenshot](https://images.tango.us/workflows/5628193b-39ec-46e9-82f5-ab17d61a8baa/steps/ba6978a2-1959-45b6-a004-be2d69217797/9810f1e1-ef3d-4c36-98c5-240caa9ac8f6.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=597&mark-y=476&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NTImaD0xODEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
   </Step>
 </Steps>
 
@@ -154,7 +155,7 @@ These settings determine how Fini responds when an issue is escalated to a human
   </Step>
 <Step title="Select a Categorization Field">
     This field has to already exists in HubSpot and contain the required categories
-![Step 23 screenshot](https://images.tango.us/workflows/bb5e53e9-76e4-4050-a437-cc943c6ff822/steps/9b6d311c-c015-42b5-a50c-bbdb9b6c6a7e/b2e4835e-7524-44d0-bfc0-6d5d9211ab85.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=591&mark-y=217&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MjImaD02MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+![Step 4 screenshot](https://images.tango.us/workflows/5628193b-39ec-46e9-82f5-ab17d61a8baa/steps/50069cb3-29cc-4e07-8f80-f2782f1dcc65/2a287273-7f6a-4286-a234-0d06a45deb6a.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=593&mark-y=236&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NTgmaD03NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
   </Step>
 <Step title="Category Add Type">
@@ -163,12 +164,12 @@ These settings determine how Fini responds when an issue is escalated to a human
     - **Append Categories**: Add new categories with each reply.
     - **Overwrite Categories**: Overwrite categories from the previous reply.
 
-    ![Step 24 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/bc877477-c890-4684-b99c-3f96e297fae0/07468105-faad-405f-bfa5-52b0b7d1087d.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=599&mark-y=346&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01NDEmaD02NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+    ![Step 5 screenshot](https://images.tango.us/workflows/5628193b-39ec-46e9-82f5-ab17d61a8baa/steps/b6e48467-abd8-44e0-bdbb-c3d9fd94a6a5/f23d90f0-dd1a-4747-a016-25ed62fb30ab.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=600&mark-y=332&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MzgmaD02NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
   </Step>
 <Step title="Category Limit">
     - Set the maximum number of categories per reply.
 
-    ![Step 25 screenshot](https://images.tango.us/workflows/87e7d0b2-66fc-42c7-bb49-a8b4eeb06d70/steps/3a7ec76e-bc65-4198-bddc-8ea2e9393cc0/9c7dcc57-ca49-4c63-ae30-9c1ff10e38fc.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=599&mark-y=441&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01NDEmaD02NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+    ![Step 6 screenshot](https://images.tango.us/workflows/5628193b-39ec-46e9-82f5-ab17d61a8baa/steps/8b2a3799-a53a-4335-b2c9-f64c54222633/691e7510-fde0-4de1-a74f-3817755e4cb7.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=603&mark-y=422&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NTUmaD02NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
   </Step>
 </Steps>
 
