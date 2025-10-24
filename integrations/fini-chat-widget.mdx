@@ -113,22 +113,6 @@ _Please note that this functionality can impact Fini's performance, potentially 
     Click on the logo in the right bottom side of the website
 ![Step 15 screenshot](https://images.tango.us/workflows/3b180847-f9c8-4d28-8732-4d32ec680742/steps/1764e6e4-b479-40db-97a6-cfb9630e7b55/3088d84f-fa96-421e-8200-96fffa8c511d.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=1004&mark-y=393&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNjUmaD0xNjUmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
   </Step>
-<Step title="Review branding">    
-Here you can check Bot's title, logo, widget description and welcome message.
-![Step 16 screenshot](https://images.tango.us/workflows/3b180847-f9c8-4d28-8732-4d32ec680742/steps/9baa79f9-44f5-486f-9ea3-520256b6c7d1/543bc86c-3412-4770-abd0-18e58cd4422f.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200)
-  </Step>
-<Step title="Review pre-defined questions">
-    Here you can see predefined questions
-![Step 17 screenshot](https://images.tango.us/workflows/3b180847-f9c8-4d28-8732-4d32ec680742/steps/d23223b3-633d-4831-a2f5-c988677a6d6f/4b05a352-051b-43bd-aab9-a088dd4c0812.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=164&mark-y=1330&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zMDYmaD0xMjgmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-<Step title="Review answers">
-    Select a predefined question or type in your own and press send
-![Step 18 screenshot](https://images.tango.us/workflows/3b180847-f9c8-4d28-8732-4d32ec680742/steps/c4341043-524f-4ec6-a227-394b6bd8f334/fa3b2506-4c28-4043-a52d-6f56ed871659.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=1005&mark-y=1504&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTEmaD0xMTEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-<Step title="Review answer quality">
-    You can assess the quality of reply by clicking thumbs up or down. These results you can track in the analytics tab in Fini
-![Step 20 screenshot](https://images.tango.us/workflows/3b180847-f9c8-4d28-8732-4d32ec680742/steps/bb35acc2-d326-49c1-b237-e9ac4bc4356f/c63e8234-0a5e-4598-aa21-6b88780eb458.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&mark-x=923&mark-y=1393&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDYmaD0xMDYmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
 </Steps>
 
 
@@ -156,7 +140,8 @@ Here you can check Bot's title, logo, widget description and welcome message.
         d.body.appendChild(js);
         w.finiWidgetOptions = {
           widgetId: "xxxxxxx",
-          mode: "widget" 
+          mode: "widget",
+          customerToken: "YOUR_JWT_TOKEN" // optional 
         };
       })(window, document, "script", "FiniWidget", "https://storage.googleapis.com/fini-widget/assets/fini-widget-prod.min.js");
   </script>
