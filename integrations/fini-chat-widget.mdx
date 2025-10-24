@@ -155,7 +155,7 @@ Here you can check Bot's title, logo, widget description and welcome message.
         js.id = "fini-widget-root";
         d.body.appendChild(js);
         w.finiWidgetOptions = {
-          widgetId: "yNYoJYuGMW",
+          widgetId: "xxxxxxx",
           mode: "widget" 
         };
       })(window, document, "script", "FiniWidget", "https://storage.googleapis.com/fini-widget/assets/fini-widget-prod.min.js");
@@ -165,8 +165,107 @@ Here you can check Bot's title, logo, widget description and welcome message.
   </Step>
 </Steps>
 
-<Check>
+## **User Authentication (Optional)**
 
+If you want to identify and authenticate users in your widget, you can implement JWT-based authentication. This allows you to track conversations by user and provide personalized experiences.
+
+<Steps>
+  <Step title="Understand the authentication flow">
+    User authentication with Fini widget works by passing a JSON Web Token (JWT) to the widget script. This token securely identifies your users and allows you to:
+    - Track conversations by specific users
+    - Provide personalized responses
+    - Maintain conversation history per user
+    - Access user-specific analytics
+  </Step>
+
+  <Step title="Generate a JWT token">
+    Create a JWT token on your backend using the Fini signing key. **Important:** Never expose this signing key in your frontend code.
+
+    **Signing Key:**
+```
+    32903c64fc17c6cd0040f9604c5f754b7b22809cf3535e675d46f422765b4a59
+```
+
+    **Required JWT Payload:**
+```json
+    {
+      "email": "user@example.com",      // Required - User's email address
+      "name": "John Doe",                // Optional - User's display name
+      "user_attributes": {               // Optional - Custom user metadata
+        "userId": "12345",
+        "accountType": "premium",
+        "customField": "value"
+      }
+    }
+```
+
+    <Note>
+    The `email` field is required. The `name` and `user_attributes` fields are optional but recommended for better user tracking and personalization.
+    </Note>
+  </Step>
+
+  <Step title="Pass the JWT to the widget">
+    Once you have generated the JWT token on your backend, pass it to the widget via the `customerToken` parameter:
+```html
+    <script>
+      (function (w, d, s, o, f, js, fjs) {
+        (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+        js.id = o;
+        js.src = f;
+        js.async = 1;
+        fjs.parentNode.insertBefore(js, fjs);
+        js = d.createElement("div");
+        js.id = "fini-widget-root";
+        d.body.appendChild(js);
+        w.finiWidgetOptions = {
+          widgetId: "YOUR_WIDGET_ID",       // Replace with your actual widget ID
+          mode: "widget",                    // Options: "widget" | "standalone"
+          customerToken: "YOUR_JWT_TOKEN"    // Add the JWT token here
+        };
+      })(window, document, "script", "FiniWidget", "https://storage.googleapis.com/fini-widget/assets/fini-widget-prod.min.js");
+    </script>
+```
+
+    <Warning>
+    **Security Best Practice:** Generate the JWT token on your server-side and pass it to your frontend. Never include the signing key in your client-side code as this would compromise the security of your authentication system.
+    </Warning>
+  </Step>
+
+  <Step title="Implementation example">
+    Here's a typical flow for implementing authenticated widgets:
+
+    1. **Backend:** When a user logs into your application, generate a JWT token using the signing key
+    2. **Frontend:** Receive the token from your backend API
+    3. **Widget:** Pass the token to the `customerToken` parameter in the widget initialization script
+    4. **Fini:** The widget validates the token and associates all conversations with the authenticated user
+
+    Example backend pseudocode:
+```javascript
+    // Backend - Generate JWT
+    const jwt = require('jsonwebtoken');
+    const signingKey = 'xxxxx'; // You can fetch this from the widget configuration 
+    
+    const payload = {
+      email: user.email,
+      name: user.name,
+      user_attributes: {
+        userId: user.id,
+        accountType: user.accountType
+      }
+    };
+    
+    const token = jwt.sign(payload, signingKey);
+    // Send this token to your frontend
+```
+  </Step>
+</Steps>
+
+<Check>
+If you don't need user authentication, you can skip this section entirely. The widget will work without the `customerToken` parameter, but conversations won't be associated with specific users.
+</Check>
+
+
+<Check>
 `Fini Widget` set up is complete. If you wish to change some of the settings go back to the [Deploy Page](https://app.usefini.com/dashboard/deploy/widget) and edit your configurations in the settings tab
 </Check>
 
